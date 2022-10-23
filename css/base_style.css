@@ -13,6 +13,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	background: transparent;
 }
 body {
+	width: 100vw;
 	font-family: "EB Garamond", sans-serif;
 	font-size: 20px;
 }
