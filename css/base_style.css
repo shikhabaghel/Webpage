@@ -136,12 +136,15 @@ li{
 	
 }
 .footer{
-	width: 90vw;
+	width: 100vw;
 	height: 50px;
-	border-top: 1px solid black;
+	border-top: 1px solid rgba(40, 40, 117, 1);
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	background-color: rgba(40, 40, 117, 1);
+	color: white;
+	font-weight: 900;
 }
 .logo:hover{
 	transform:scale(1.3,1.3);
@@ -159,4 +162,9 @@ li{
 }
 .right_col{
 	width: 80%;
+}
+.blue_background{
+	background-color: rgba(40, 40, 117, 1);
+	color: white;
+	font-weight: 900;
 }
