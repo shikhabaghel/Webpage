@@ -13,9 +13,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	background: transparent;
 }
 body {
-	font-family: "EB Garamond", sans-serif;
+	font-family: "Calibri", sans-serif;
 	font-size: 18px;
-	color: rgba(35, 36, 35, 1);
+	color: rgba(35, 36, 35, 0.8);
+	background-color: white;
+	/*
+	background-color: rgba(35, 36, 35, 0.8);
+	color: white;
+	*/
 	position: absolute;
 	width: 100%;
 	margin: auto;
@@ -158,7 +163,7 @@ li{
 	height: 40vh;
 }
 .page_heading{
-	font-family: "Kotta One", sans-serif;
+	font-family: "Farsan", sans-serif;
 	font-size:40px;
 	text-align: center;
 	margin: 10px 0px 10px 0px;
