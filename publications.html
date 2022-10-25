@@ -16,12 +16,7 @@
 
 	<body lang="en-IN" onload="page_setup()">
 
-		<div class="title_pane fig_abstract">
-			<div class="empty_div"></div>
-		</div>
-
-		<div class="flex-container menu_pane">
-			<div></div>
+		<div class="menu_pane">
 			<div class="menu_items empty_menu_item">
 				<p class="first_name">Mrinmoy</p> &nbsp;
 				<p class="last_name">Bhattacharjee</p>
@@ -51,260 +46,249 @@
 			</div>
 		</div>
 
-		<div class="flex-container">
-			<div class="dashboard flex_col">
-				
-				<p class="page_subheading">Chronological list of publications</p>
-				<hr style="width:100%;color: rgba(54, 56, 55, 0.5);">
+		<div class="dashboard flex_col">
+			
+			<p class="page_subheading">Chronological list of publications</p>
+			<hr style="width:100%;color: rgba(54, 56, 55, 0.5);">
 
-				<!-- 2022 -->
-				<div class="year_wise_content">
-					<p class="page_subheading">2022</p>
-					<div class="flex_col">
-						<div class="publication_record">
-							<div class="info_div">
-								<p class="title">Speech/music classification using phase-based and magnitude-based features</p>
-								<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
-								<p class="proceedings">Elsevier Speech Communication</p>
-								<span> 
-									<span id="abstract_launcher_S0167639322000887" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
-									<span><a href="https://www.sciencedirect.com/science/article/abs/pii/S0167639322000887" target="_blank" class="html_button hyperlink">[HTML]</a></span>
-								</span>
-							</div>
-							<div class="paper_fig"><img src="images/research_fig/Speech_Communication_Jun22.png" class="fig_dimensions"/></div>
-						</div>
-						<div class="abstract_div" id="S0167639322000887"> Detection of speech and music is an essential preprocessing step for many high-level audio-based applications like speaker diarization and music information retrieval. Researchers have previously used various magnitude-based features in this task. In comparison, the phase spectrum has received lesser attention. The phase of a signal is believed to carry non-trivial information that can help determine its audio class. This work explores three existing phase-based features for speech vs. music classification. The potential of phase information is highlighted through statistical significance tests and canonical correlation analyses. The proposed approach is benchmarked against four baseline magnitude-based feature sets. This work also contributes an annotated audio dataset named Movie - MUSNOMIX of 8 h and 20 min duration, comprising seven audio classes, including speech and music. The Movie - MUSNOMIX dataset and widely used public datasets like MUSAN, GTZAN, Scheirer–Slaney, and Muspeak have been used for performance evaluations. In combination with magnitude-based ones, phase-based features improve upon the baseline performance consistently for the datasets used. Moreover, various combinations of phase and magnitude-based features show satisfactory generalization capability over the two datasets. The performances of phase-based features in identifying speech and music signals corrupted with different environmental noise at various SNR levels are also reported. Last but not least, a preliminary study on the efficacy of phase-based features in segmenting continuous sequences of speech and music signals is also provided. The codes used in this work and the contributed dataset have been made freely available.</div>
+			<!-- 2022 -->
+			<p class="page_subheading">2022</p>
+			<div class="year_wise_content">
+				<div class="flex_col">
+				<div class="publication_record">
+					<div class="info_div">
+						<p class="title">Speech/music classification using phase-based and magnitude-based features</p>
+						<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
+						<p class="proceedings">Elsevier Speech Communication</p>
+						<span> 
+						<span id="abstract_launcher_S0167639322000887" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+						<span><a href="https://www.sciencedirect.com/science/article/abs/pii/S0167639322000887" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+						</span>
 					</div>
-
-
-					<div class="flex_col">
-						<div class="publication_record">
-							<div class="info_div">
-								<p class="title">Clean vs. Overlapped Speech-Music Detection Using Harmonic-Percussive Features and Multi-Task Learning</p>
-								<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
-								<p class="proceedings">IEEE/ACM Transactions on Audio, Speech, and Language Processing</p>
-								<span> 
-									<span id="abstract_launcher_9748030" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
-									<span><a href="https://ieeexplore.ieee.org/abstract/document/9748030" target="_blank" class="html_button hyperlink">[HTML]</a></span>
-								</span>
-							</div>
-							<div class="paper_fig"><img src="images/research_fig/IEEE_TASLP_Apr22.png" class="fig_dimensions"/></div>
-						</div>
-						<div class="abstract_div" id="9748030">Detection of speech and music signals in isolated and overlapped conditions is an essential preprocessing step for many audio applications. Speech signals have wavy and continuous harmonics, while music signals exhibit horizontally linear and discontinuous harmonic patterns. Music signals also contain more percussive components than speech signals, manifested as vertical striations in the spectrograms. In case of speech music overlap, it might be challenging for automatic feature learning systems to extract class-specific horizontal and vertical striations from the combined spectrogram representation. A pre-processing step of separating the harmonic and percussive components before training might aid the classifier. Thus, this work proposes the use of harmonic-percussive source separation method to generate features for better detection of speech and music signals. Additionally, this work also explores the traditional and cascaded-information multi-task learning (MTL) frameworks to design better classifiers. MTL framework aids the training of the main task by employing simultaneous learning of several related auxiliary tasks. Results have been reported both on synthetically generated speech music overlapped signals and real recordings. Four state-of-the-art approaches are used for performance comparison. Experiments show that harmonic and percussive decomposition of spectrograms perform better as features. Moreover, the MTL-framework based classifiers further improve performances.</div>
-					</div>
-
-
-					<div class="flex_col">
-						<div class="publication_record">
-							<div class="info_div">
-								<p class="title">Speech Music Overlap Detection using Spectral Peak Evolutions</p>
-								<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
-								<p class="proceedings">24th International Conference on Speech and Computer (SPECOM)</p>
-								<span> 
-									<span id="abstract_launcher_SPECOM22" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
-									<span><a href="" target="_blank" class="html_button hyperlink">[Accepted]</a></span>
-								</span>
-							</div>
-							<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
-						</div>
-						<div class="abstract_div" id="SPECOM22">Speech-music overlap detection in audio signals is an essential preprocessing step for many high-level audio processing applications. Speech and music spectrograms exhibit characteristic harmonic striations that can be used as a feature for detecting their overlap. Hence, this work proposes two features generated using a spectral peak tracking algorithm to capture prominent harmonic patterns in spectrograms. One feature consists of the spectral peak amplitude evolutions in an audio interval. The second feature is designed as a Mel-scaled spectrogram obtained by suppressing non-peak spectral components. In addition, a one-dimensional convolutional neural network architecture is proposed to learn the temporal evolution of spectral peaks. Mel-spectrogram is used as a baseline feature to compare performances. A popular public dataset MUSAN with 102 h of data has been used to perform experiments. A late fusion of the proposed features with baseline is observed to provide better performance.</div>
-					</div>
-
-
-					<div class="flex_col">
-						<div class="publication_record">
-							<div class="info_div">
-								<p class="title">Foreground-Background Audio Separation using Spectral Peaks based Time-Frequency Masks</p>
-								<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
-								<p class="proceedings">2022 IEEE International Conference on Signal Processing and Communications (SPCOM)</p>
-								<span>
-									<span id="abstract_launcher_9840850" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
-									<span><a href="https://ieeexplore.ieee.org/document/9840850" target="_blank" class="html_button hyperlink">[HTML]</a></span>
-								</span>
-							</div>
-							<div class="paper_fig"><img src="images/research_fig/SPCOM_2022.png" class="fig_dimensions"/></div>
-						</div>
-						<div class="abstract_div" id="9840850">The separation of foreground and background sounds can serve as a useful preprocessing step when dealing with real-world audio signals. This work proposes a foreground-background audio separation (FBAS) algorithm that uses spectral peak information for generating time-frequency masks. The proposed algorithm can work without training, is relatively fast, and provides decent audio separation. As a specific use case, the proposed algorithm is used to extract clean foreground signals from noisy speech signals. The quality of foreground speech separated with FBAS is compared with the output of a state-of-the-art deep-learning-based speech enhancement system. Various subjective and objective evaluation measures are computed, which indicate that the proposed FBAS algorithm is effective.</div>
-					</div>
-
-
-					<div class="flex_col">
-						<div class="publication_record">
-							<div class="info_div">
-								<p class="title">Low-Resource Dialect Identification in Ao Using Noise Robust Mean Hilbert Envelope Coefficients</p>
-								<p class="authors">Moakala Tzudir, Mrinmoy Bhattacharjee, Priankoo Sarmah, S. R. Mahadeva Prasanna</p>
-								<p class="proceedings">28th National Conference on Communications (NCC-2022)</p>
-								<span> 
-									<span id="abstract_launcher_9806808" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
-									<span><a href="https://ieeexplore.ieee.org/abstract/document/9806808" target="_blank" class="html_button hyperlink">[HTML]</a></span>
-								</span> 
-							</div>
-							<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
-						</div>
-						<div class="abstract_div" id="9806808">This paper presents an automatic dialect identification system in Ao using a deep Convolutional Neural Network with residual connections. Ao is an under-resourced language belonging to the Tibeto-Burman family in the North-East of India. The three distinct dialects of the language are Chungli, Mongsen and Changki. Ao is a tone language and consists of three tones, viz., high, mid, and low. The recognition of tones is said to be influenced by the production process as well as human perception. In this work, the Mean Hilbert Envelope Coefficients (MHEC) feature is explored to identify the three dialects of Ao as this feature is reported to have information of human auditory nerve responses. Mel Frequency Cepstral Coefficients (MFCC) feature is used as the baseline. In addition, the effect of noise in the dialect identification task at various signal-to-noise ratio scenarios is studied. The experiments show that the MHEC feature provides an improvement of almost 10% average F1-score at high noise cases.</div>
-					</div>
-
+					<div class="paper_fig"><img src="images/research_fig/Speech_Communication_Jun22.png" class="fig_dimensions"/></div>
+				</div>
+				<div class="abstract_div" id="S0167639322000887"> Detection of speech and music is an essential preprocessing step for many high-level audio-based applications like speaker diarization and music information retrieval. Researchers have previously used various magnitude-based features in this task. In comparison, the phase spectrum has received lesser attention. The phase of a signal is believed to carry non-trivial information that can help determine its audio class. This work explores three existing phase-based features for speech vs. music classification. The potential of phase information is highlighted through statistical significance tests and canonical correlation analyses. The proposed approach is benchmarked against four baseline magnitude-based feature sets. This work also contributes an annotated audio dataset named Movie - MUSNOMIX of 8 h and 20 min duration, comprising seven audio classes, including speech and music. The Movie - MUSNOMIX dataset and widely used public datasets like MUSAN, GTZAN, Scheirer–Slaney, and Muspeak have been used for performance evaluations. In combination with magnitude-based ones, phase-based features improve upon the baseline performance consistently for the datasets used. Moreover, various combinations of phase and magnitude-based features show satisfactory generalization capability over the two datasets. The performances of phase-based features in identifying speech and music signals corrupted with different environmental noise at various SNR levels are also reported. Last but not least, a preliminary study on the efficacy of phase-based features in segmenting continuous sequences of speech and music signals is also provided. The codes used in this work and the contributed dataset have been made freely available.</div>
 				</div>
 
 
-				<!-- 2021 -->
-				<div class="year_wise_content">
-					<p class="page_subheading">2021</p>
-
-					<div class="flex_col">
-						<div class="publication_record">
-							<div class="info_div">
-								<p class="title">Automatic Detection of Shouted Speech Segments in Indian News Debates</p>
-								<p class="authors">Shikha Baghel, Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna, and Prithwijit Guha</p>
-								<p class="proceedings">Interspeech 2021</p>
-								<span> 
-									<span id="abstract_launcher_Interspeech21" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
-									<span><a href="https://www.researchgate.net/profile/Prithwijit-Guha/publication/354221495_Automatic_Detection_of_Shouted_Speech_Segments_in_Indian_News_Debates/links/6226069597401151d204a4ff/Automatic-Detection-of-Shouted-Speech-Segments-in-Indian-News-Debates.pdf" target="_blank" class="pdf_button hyperlink">[PDF]</a></span>
-								</span> 
-							</div>
-							<div class="paper_fig"><img src="images/research_fig/Interspeech_21.png" class="fig_dimensions"/></div>
-						</div>
-						<div class="abstract_div" id="Interspeech21">Shouted speech detection is an essential pre-processing step in conventional speech processing systems such as speech and speaker recognition, speaker diarization, and others. Excitation source plays an important role in shouted speech production. This work explores feature computed from the Integrated Linear Prediction Residual (ILPR) signal for shouted speech detection in Indian news debates. The log spectrogram of ILPR signal provides time-frequency characteristics of excitation source signal. The proposed shouted speech detection system is deep network with CNN-based autoencoder and attention-based classifier sub-modules. The Autoencoder sub-network aids the classifier in learning discriminative deep embeddings for better classification. The proposed classifier is equipped with attention mechanism and Bidirectional Gated Recurrent Units. Classification results show that the proposed system with excitation feature performs better than baseline log spectrogram computed from the pre-emphasized speech signal. A score-level fusion of the classifiers trained on the source feature and the baseline feature provides the best performance. The performance of the proposed shouted speech detection is also evaluated at various speech segment durations.</div>										
+				<div class="flex_col">
+				<div class="publication_record">
+					<div class="info_div">
+						<p class="title">Clean vs. Overlapped Speech-Music Detection Using Harmonic-Percussive Features and Multi-Task Learning</p>
+						<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
+						<p class="proceedings">IEEE/ACM Transactions on Audio, Speech, and Language Processing</p>
+						<span> 
+						<span id="abstract_launcher_9748030" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+						<span><a href="https://ieeexplore.ieee.org/abstract/document/9748030" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+						</span>
 					</div>
-
-
-					<div class="flex_col">
-						<div class="publication_record">
-							<div class="info_div">
-								<p class="title">Detection of Speech Overlapped with Low-Energy Music using Pyknograms</p>
-								<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
-								<p class="proceedings">27th National Conference on Communications (NCC-2021)</p>
-								<span> 
-									<span id="abstract_launcher_9530150" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
-									<span><a href="https://ieeexplore.ieee.org/abstract/document/9530150" target="_blank" class="html_button hyperlink">[HTML]</a></span>
-								</span> 
-							</div>
-							<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
-						</div>
-						<div class="abstract_div" id="9530150">Detection of speech overlapped with music is a challenging task. This work deals with discriminating clean speech from speech overlapped with low-energy music. The overlapped signals are generated synthetically. An enhanced spectrogram representation called Pyknogram has been explored for the current task. Pyknograms have been previously used in overlapped speech detection. The classification is performed using a neural network that is designed with only convolutional layers. The performance of Pyknograms at various high SNR levels is compared with that of discrete fourier transform based spectrograms. The classification system is benchmarked on three publicly available datasets, viz., GTZAN, Scheirer-slaney and MUSAN. The Pyknogram representation with the fully convolutional classifier performs well, both individually and in combination with spectrograms.</div>										
-					</div>
-
+					<div class="paper_fig"><img src="images/research_fig/IEEE_TASLP_Apr22.png" class="fig_dimensions"/></div>
+				</div>
+				<div class="abstract_div" id="9748030">Detection of speech and music signals in isolated and overlapped conditions is an essential preprocessing step for many audio applications. Speech signals have wavy and continuous harmonics, while music signals exhibit horizontally linear and discontinuous harmonic patterns. Music signals also contain more percussive components than speech signals, manifested as vertical striations in the spectrograms. In case of speech music overlap, it might be challenging for automatic feature learning systems to extract class-specific horizontal and vertical striations from the combined spectrogram representation. A pre-processing step of separating the harmonic and percussive components before training might aid the classifier. Thus, this work proposes the use of harmonic-percussive source separation method to generate features for better detection of speech and music signals. Additionally, this work also explores the traditional and cascaded-information multi-task learning (MTL) frameworks to design better classifiers. MTL framework aids the training of the main task by employing simultaneous learning of several related auxiliary tasks. Results have been reported both on synthetically generated speech music overlapped signals and real recordings. Four state-of-the-art approaches are used for performance comparison. Experiments show that harmonic and percussive decomposition of spectrograms perform better as features. Moreover, the MTL-framework based classifiers further improve performances.</div>
 				</div>
 
 
-				<!-- 2020 -->
-				<div class="year_wise_content">
-					<p class="page_subheading">2020</p>
-
-					<div class="flex_col">
-						<div class="publication_record">
-							<div class="info_div">
-								<p class="title">Speech/Music Classification Using Features From Spectral Peaks</p>
-								<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
-								<p class="proceedings">IEEE/ACM Transactions on Audio, Speech, and Language Processing</p>
-								<span> 
-									<span id="abstract_launcher_9089263" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
-									<span><a href="https://ieeexplore.ieee.org/abstract/document/9089263" target="_blank" class="html_button hyperlink">[HTML]</a></span>
-								</span>
-							</div>
-							<div class="paper_fig"><img src="images/research_fig/IEEE_TASLP_Apr20.png" class="fig_dimensions"/></div>
-						</div>
-						<div class="abstract_div" id="9089263">Spectrograms of speech and music contain distinct striation patterns. Traditional features represent various properties of the audio signal but do not necessarily capture such patterns. This work proposes to model such spectrogram patterns using a novel Spectral Peak Tracking (SPT) approach. Two novel time-frequency features for speech vs. music classification are proposed. The proposed features are extracted in two stages. First, SPT is performed to track a preset number of highest amplitude spectral peaks in an audio interval. In the second stage, the location and amplitudes of these peak traces are used to compute the proposed feature sets. The first feature involves the computation of mean and standard deviation of peak traces. The second feature is obtained as averaged component posterior probability vectors of Gaussian mixture models learned on the peak traces. Speech vs. music classification is performed by training various binary classifiers on these proposed features. Three standard datasets are used to evaluate the efficiency of the proposed features for speech/music classification. The proposed features are benchmarked against five baseline approaches. Finally, the best-proposed feature is combined with two contemporary deep-learning based features to show that such combinations can lead to more robust speech vs. music classification systems.</div>
+				<div class="flex_col">
+				<div class="publication_record">
+					<div class="info_div">
+						<p class="title">Speech Music Overlap Detection using Spectral Peak Evolutions</p>
+						<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
+						<p class="proceedings">24th International Conference on Speech and Computer (SPECOM)</p>
+						<span> 
+						<span id="abstract_launcher_SPECOM22" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+						<span><a href="" target="_blank" class="html_button hyperlink">[Accepted]</a></span>
+						</span>
 					</div>
-					
-
-					<div class="flex_col">
-						<div class="publication_record">
-							<div class="info_div">
-								<p class="title">Classification of Speech vs. Speech with Background Music</p>
-								<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
-								<p class="proceedings">2020 IEEE International Conference on Signal Processing and Communications (SPCOM)</p>
-								<span> 
-									<span id="abstract_launcher_9179491" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
-									<span><a href="https://ieeexplore.ieee.org/abstract/document/9179491" target="_blank" class="html_button hyperlink">[HTML]</a></span>
-								</span> 
-							</div>
-							<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
-						</div>
-						<div class="abstract_div" id="9179491">Applications that perform enhancement of speech containing background music require a critical preprocessing step that can efficiently detect such segments. This work proposes such a preprocessing method to detect speech with background music that is mixed at different SNR levels. A bag-of-words approach is proposed in this work. Representative dictionaries from speech and music data are first learned. The signals are processed as spectrograms of 1s intervals. Rows of these spectrograms are used to learn separate speech and music dictionaries. This work proposes a weighting scheme to reduce confusion by suppressing codewords of one class that have similarities to the other class. The proposed feature is a weighted histogram of 1s audio intervals obtained from the learned dictionaries. The classification is performed using a deep neural network classifier. The proposed approach is validated against a baseline and benchmarked over two publicly available datasets. The proposed feature shows promising results, both individually and in combination with the baseline.</div>										
-					</div>
-
+					<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
+				</div>
+				<div class="abstract_div" id="SPECOM22">Speech-music overlap detection in audio signals is an essential preprocessing step for many high-level audio processing applications. Speech and music spectrograms exhibit characteristic harmonic striations that can be used as a feature for detecting their overlap. Hence, this work proposes two features generated using a spectral peak tracking algorithm to capture prominent harmonic patterns in spectrograms. One feature consists of the spectral peak amplitude evolutions in an audio interval. The second feature is designed as a Mel-scaled spectrogram obtained by suppressing non-peak spectral components. In addition, a one-dimensional convolutional neural network architecture is proposed to learn the temporal evolution of spectral peaks. Mel-spectrogram is used as a baseline feature to compare performances. A popular public dataset MUSAN with 102 h of data has been used to perform experiments. A late fusion of the proposed features with baseline is observed to provide better performance.</div>
 				</div>
 
 
-				<!-- 2019 -->
-				<div class="year_wise_content">
-					<p class="page_subheading">2019</p>
-
-					<div class="flex_col">
-						<div class="publication_record">
-							<div class="info_div">
-								<p class="title">Shouted and Normal Speech Classification Using 1D CNN</p>
-								<p class="authors">Shikha Baghel, Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna, and Prithwijit Guha</p>
-								<p class="proceedings">8th International Conference on Pattern Recognition and Machine Intelligence</p>
-								<span> 
-									<span id="abstract_launcher_PReMI19" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
-									<span><a href="https://link.springer.com/chapter/10.1007/978-3-030-34872-4_52" target="_blank" class="html_button hyperlink">[HTML]</a></span>
-								</span> 
-							</div>
-							<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
-						</div>
-						<div class="abstract_div" id="PReMI19">Automatic shouted speech detection systems usually model its spectral characteristics to differentiate it from normal speech. Mostly hand-crafted features have been explored for shouted speech detection. However, many works on audio processing suggest that approaches based on automatic feature learning are more robust than hand-crafted feature engineering. This work re-demonstrates this notion by proposing a 1D-CNN architecture for shouted and normal speech classification task. The CNN learns features from the magnitude spectrum of speech frames. Classification is performed by fully connected layers at later stages of the network. Performance of the proposed architecture is evaluated on three datasets and validated against three existing approaches. As an additional contribution, a discussion of features learned by the CNN kernels is provided with relevant visualizations.</div>										
+				<div class="flex_col">
+				<div class="publication_record">
+					<div class="info_div">
+						<p class="title">Foreground-Background Audio Separation using Spectral Peaks based Time-Frequency Masks</p>
+						<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
+						<p class="proceedings">2022 IEEE International Conference on Signal Processing and Communications (SPCOM)</p>
+						<span>
+						<span id="abstract_launcher_9840850" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+						<span><a href="https://ieeexplore.ieee.org/document/9840850" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+						</span>
 					</div>
-
+					<div class="paper_fig"><img src="images/research_fig/SPCOM_2022.png" class="fig_dimensions"/></div>
+				</div>
+				<div class="abstract_div" id="9840850">The separation of foreground and background sounds can serve as a useful preprocessing step when dealing with real-world audio signals. This work proposes a foreground-background audio separation (FBAS) algorithm that uses spectral peak information for generating time-frequency masks. The proposed algorithm can work without training, is relatively fast, and provides decent audio separation. As a specific use case, the proposed algorithm is used to extract clean foreground signals from noisy speech signals. The quality of foreground speech separated with FBAS is compared with the output of a state-of-the-art deep-learning-based speech enhancement system. Various subjective and objective evaluation measures are computed, which indicate that the proposed FBAS algorithm is effective.</div>
 				</div>
 
 
-				<!-- 2018 -->
-				<div class="year_wise_content">
-					<p class="page_subheading">2018</p>
-
-					<div class="flex_col">
-						<div class="publication_record">
-							<div class="info_div">
-								<p class="title">Time-frequency audio features for speech-music classification</p>
-								<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna, and Prithwijit Guha</p>
-								<p class="proceedings">arXiv</p>
-								<span> 
-									<span id="abstract_launcher_arXiv18" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
-									<span><a href="https://arxiv.org/abs/1811.01222" target="_blank" class="html_button hyperlink">[HTML]</a></li></span>
-								</span>
-							</div>
-							<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
-						</div>
-						<div class="abstract_div" id="arXiv18">Distinct striation patterns are observed in the spectrograms of speech and music. This motivated us to propose three novel time-frequency features for speech-music classification. These features are extracted in two stages. First, a preset number of prominent spectral peak locations are identified from the spectra of each frame. These important peak locations obtained from each frame are used to form Spectral peak sequences (SPS) for an audio interval. In second stage, these SPS are treated as time series data of frequency locations. The proposed features are extracted as periodicity, average frequency and statistical attributes of these spectral peak sequences. Speech-music categorization is performed by learning binary classifiers on these features. We have experimented with Gaussian mixture models, support vector machine and random forest classifiers. Our proposal is validated on four datasets and benchmarked against three baseline approaches. Experimental results establish the validity of our proposal. </div>										
+				<div class="flex_col">
+				<div class="publication_record">
+					<div class="info_div">
+						<p class="title">Low-Resource Dialect Identification in Ao Using Noise Robust Mean Hilbert Envelope Coefficients</p>
+						<p class="authors">Moakala Tzudir, Mrinmoy Bhattacharjee, Priankoo Sarmah, S. R. Mahadeva Prasanna</p>
+						<p class="proceedings">28th National Conference on Communications (NCC-2022)</p>
+						<span> 
+						<span id="abstract_launcher_9806808" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+						<span><a href="https://ieeexplore.ieee.org/abstract/document/9806808" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+						</span> 
 					</div>
-
+					<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
 				</div>
-
-
-				<!-- 2014 -->
-				<div class="year_wise_content">
-					<p class="page_subheading">2014</p>
-
-					<div class="flex_col">
-						<div class="publication_record">
-							<div class="info_div">
-								<p class="title">Determining redundant nodes in a location unaware Wireless Sensor Network</p>
-								<p class="authors">Mrinmoy Bhattacharjee and Subhrata Gupta</p>
-								<p class="proceedings">2012 IEEE International Conference on Advanced Communication Control and Computing Technologies (ICACCCT)</p>
-								<span>
-									<span id="abstract_launcher_7019215" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
-									<span><a href="https://ieeexplore.ieee.org/abstract/document/7019215" target="_blank" class="html_button hyperlink">[HTML]</a></span>
-								</span>
-							</div>
-							<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
-						</div>
-						<div class="abstract_div" id="7019215">Recently Wireless Sensor Networks (WSNs) have garnered a great interest among the research community. WSNs are heavily energy constrained and hence redundant nodes in the network must be allowed to sleep so that the network lifetime may be enhanced. Recently a lot of work has been done to determine the amount of redundancy inherent in a WSN. This paper describes a method that attempts to reduce the redundancy in the network that is distributive in nature and does not use the location information of the nodes. To find out if a node is redundant, the nodes' sensing area overlap is to be found out. The method uses three-circle overlap area as the base case for finding the total overlap over the sensing area of a node by its neighbors. The work here is for static deployment of the sensor nodes.</div>										
-
-					</div>
+				<div class="abstract_div" id="9806808">This paper presents an automatic dialect identification system in Ao using a deep Convolutional Neural Network with residual connections. Ao is an under-resourced language belonging to the Tibeto-Burman family in the North-East of India. The three distinct dialects of the language are Chungli, Mongsen and Changki. Ao is a tone language and consists of three tones, viz., high, mid, and low. The recognition of tones is said to be influenced by the production process as well as human perception. In this work, the Mean Hilbert Envelope Coefficients (MHEC) feature is explored to identify the three dialects of Ao as this feature is reported to have information of human auditory nerve responses. Mel Frequency Cepstral Coefficients (MFCC) feature is used as the baseline. In addition, the effect of noise in the dialect identification task at various signal-to-noise ratio scenarios is studied. The experiments show that the MHEC feature provides an improvement of almost 10% average F1-score at high noise cases.</div>
 				</div>
-
-
-
-
-<!--
-				<div class="profile_pic">
-					<img src="images/Profile_Pic_candid.jpg" width="300px">
-				</div>
--->
 
 			</div>
+
+
+			<!-- 2021 -->
+			<p class="page_subheading">2021</p>
+			<div class="year_wise_content">
+
+				<div class="flex_col">
+				<div class="publication_record">
+					<div class="info_div">
+						<p class="title">Automatic Detection of Shouted Speech Segments in Indian News Debates</p>
+						<p class="authors">Shikha Baghel, Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna, and Prithwijit Guha</p>
+						<p class="proceedings">Interspeech 2021</p>
+						<span> 
+						<span id="abstract_launcher_Interspeech21" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+						<span><a href="https://www.researchgate.net/profile/Prithwijit-Guha/publication/354221495_Automatic_Detection_of_Shouted_Speech_Segments_in_Indian_News_Debates/links/6226069597401151d204a4ff/Automatic-Detection-of-Shouted-Speech-Segments-in-Indian-News-Debates.pdf" target="_blank" class="pdf_button hyperlink">[PDF]</a></span>
+						</span> 
+					</div>
+					<div class="paper_fig"><img src="images/research_fig/Interspeech_21.png" class="fig_dimensions"/></div>
+				</div>
+				<div class="abstract_div" id="Interspeech21">Shouted speech detection is an essential pre-processing step in conventional speech processing systems such as speech and speaker recognition, speaker diarization, and others. Excitation source plays an important role in shouted speech production. This work explores feature computed from the Integrated Linear Prediction Residual (ILPR) signal for shouted speech detection in Indian news debates. The log spectrogram of ILPR signal provides time-frequency characteristics of excitation source signal. The proposed shouted speech detection system is deep network with CNN-based autoencoder and attention-based classifier sub-modules. The Autoencoder sub-network aids the classifier in learning discriminative deep embeddings for better classification. The proposed classifier is equipped with attention mechanism and Bidirectional Gated Recurrent Units. Classification results show that the proposed system with excitation feature performs better than baseline log spectrogram computed from the pre-emphasized speech signal. A score-level fusion of the classifiers trained on the source feature and the baseline feature provides the best performance. The performance of the proposed shouted speech detection is also evaluated at various speech segment durations.</div>							
+				</div>
+
+
+				<div class="flex_col">
+				<div class="publication_record">
+					<div class="info_div">
+						<p class="title">Detection of Speech Overlapped with Low-Energy Music using Pyknograms</p>
+						<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
+						<p class="proceedings">27th National Conference on Communications (NCC-2021)</p>
+						<span> 
+						<span id="abstract_launcher_9530150" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+						<span><a href="https://ieeexplore.ieee.org/abstract/document/9530150" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+						</span> 
+					</div>
+					<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
+				</div>
+				<div class="abstract_div" id="9530150">Detection of speech overlapped with music is a challenging task. This work deals with discriminating clean speech from speech overlapped with low-energy music. The overlapped signals are generated synthetically. An enhanced spectrogram representation called Pyknogram has been explored for the current task. Pyknograms have been previously used in overlapped speech detection. The classification is performed using a neural network that is designed with only convolutional layers. The performance of Pyknograms at various high SNR levels is compared with that of discrete fourier transform based spectrograms. The classification system is benchmarked on three publicly available datasets, viz., GTZAN, Scheirer-slaney and MUSAN. The Pyknogram representation with the fully convolutional classifier performs well, both individually and in combination with spectrograms.</div>							
+				</div>
+
+			</div>
+
+
+			<!-- 2020 -->
+			<p class="page_subheading">2020</p>
+			<div class="year_wise_content">
+
+				<div class="flex_col">
+				<div class="publication_record">
+					<div class="info_div">
+						<p class="title">Speech/Music Classification Using Features From Spectral Peaks</p>
+						<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
+						<p class="proceedings">IEEE/ACM Transactions on Audio, Speech, and Language Processing</p>
+						<span> 
+						<span id="abstract_launcher_9089263" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+						<span><a href="https://ieeexplore.ieee.org/abstract/document/9089263" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+						</span>
+					</div>
+					<div class="paper_fig"><img src="images/research_fig/IEEE_TASLP_Apr20.png" class="fig_dimensions"/></div>
+				</div>
+				<div class="abstract_div" id="9089263">Spectrograms of speech and music contain distinct striation patterns. Traditional features represent various properties of the audio signal but do not necessarily capture such patterns. This work proposes to model such spectrogram patterns using a novel Spectral Peak Tracking (SPT) approach. Two novel time-frequency features for speech vs. music classification are proposed. The proposed features are extracted in two stages. First, SPT is performed to track a preset number of highest amplitude spectral peaks in an audio interval. In the second stage, the location and amplitudes of these peak traces are used to compute the proposed feature sets. The first feature involves the computation of mean and standard deviation of peak traces. The second feature is obtained as averaged component posterior probability vectors of Gaussian mixture models learned on the peak traces. Speech vs. music classification is performed by training various binary classifiers on these proposed features. Three standard datasets are used to evaluate the efficiency of the proposed features for speech/music classification. The proposed features are benchmarked against five baseline approaches. Finally, the best-proposed feature is combined with two contemporary deep-learning based features to show that such combinations can lead to more robust speech vs. music classification systems.</div>
+				</div>
+				
+
+				<div class="flex_col">
+				<div class="publication_record">
+					<div class="info_div">
+						<p class="title">Classification of Speech vs. Speech with Background Music</p>
+						<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
+						<p class="proceedings">2020 IEEE International Conference on Signal Processing and Communications (SPCOM)</p>
+						<span> 
+						<span id="abstract_launcher_9179491" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+						<span><a href="https://ieeexplore.ieee.org/abstract/document/9179491" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+						</span> 
+					</div>
+					<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
+				</div>
+				<div class="abstract_div" id="9179491">Applications that perform enhancement of speech containing background music require a critical preprocessing step that can efficiently detect such segments. This work proposes such a preprocessing method to detect speech with background music that is mixed at different SNR levels. A bag-of-words approach is proposed in this work. Representative dictionaries from speech and music data are first learned. The signals are processed as spectrograms of 1s intervals. Rows of these spectrograms are used to learn separate speech and music dictionaries. This work proposes a weighting scheme to reduce confusion by suppressing codewords of one class that have similarities to the other class. The proposed feature is a weighted histogram of 1s audio intervals obtained from the learned dictionaries. The classification is performed using a deep neural network classifier. The proposed approach is validated against a baseline and benchmarked over two publicly available datasets. The proposed feature shows promising results, both individually and in combination with the baseline.</div>							
+				</div>
+
+			</div>
+
+
+			<!-- 2019 -->
+			<p class="page_subheading">2019</p>
+			<div class="year_wise_content">
+
+				<div class="flex_col">
+				<div class="publication_record">
+					<div class="info_div">
+						<p class="title">Shouted and Normal Speech Classification Using 1D CNN</p>
+						<p class="authors">Shikha Baghel, Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna, and Prithwijit Guha</p>
+						<p class="proceedings">8th International Conference on Pattern Recognition and Machine Intelligence</p>
+						<span> 
+						<span id="abstract_launcher_PReMI19" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+						<span><a href="https://link.springer.com/chapter/10.1007/978-3-030-34872-4_52" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+						</span> 
+					</div>
+					<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
+				</div>
+				<div class="abstract_div" id="PReMI19">Automatic shouted speech detection systems usually model its spectral characteristics to differentiate it from normal speech. Mostly hand-crafted features have been explored for shouted speech detection. However, many works on audio processing suggest that approaches based on automatic feature learning are more robust than hand-crafted feature engineering. This work re-demonstrates this notion by proposing a 1D-CNN architecture for shouted and normal speech classification task. The CNN learns features from the magnitude spectrum of speech frames. Classification is performed by fully connected layers at later stages of the network. Performance of the proposed architecture is evaluated on three datasets and validated against three existing approaches. As an additional contribution, a discussion of features learned by the CNN kernels is provided with relevant visualizations.</div>							
+				</div>
+
+			</div>
+
+
+			<!-- 2018 -->
+			<p class="page_subheading">2018</p>
+			<div class="year_wise_content">
+
+				<div class="flex_col">
+				<div class="publication_record">
+					<div class="info_div">
+						<p class="title">Time-frequency audio features for speech-music classification</p>
+						<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna, and Prithwijit Guha</p>
+						<p class="proceedings">arXiv</p>
+						<span> 
+						<span id="abstract_launcher_arXiv18" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+						<span><a href="https://arxiv.org/abs/1811.01222" target="_blank" class="html_button hyperlink">[HTML]</a></li></span>
+						</span>
+					</div>
+					<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
+				</div>
+				<div class="abstract_div" id="arXiv18">Distinct striation patterns are observed in the spectrograms of speech and music. This motivated us to propose three novel time-frequency features for speech-music classification. These features are extracted in two stages. First, a preset number of prominent spectral peak locations are identified from the spectra of each frame. These important peak locations obtained from each frame are used to form Spectral peak sequences (SPS) for an audio interval. In second stage, these SPS are treated as time series data of frequency locations. The proposed features are extracted as periodicity, average frequency and statistical attributes of these spectral peak sequences. Speech-music categorization is performed by learning binary classifiers on these features. We have experimented with Gaussian mixture models, support vector machine and random forest classifiers. Our proposal is validated on four datasets and benchmarked against three baseline approaches. Experimental results establish the validity of our proposal. </div>							
+				</div>
+
+			</div>
+
+
+			<!-- 2014 -->
+			<p class="page_subheading">2014</p>
+			<div class="year_wise_content">
+
+				<div class="flex_col">
+				<div class="publication_record">
+					<div class="info_div">
+						<p class="title">Determining redundant nodes in a location unaware Wireless Sensor Network</p>
+						<p class="authors">Mrinmoy Bhattacharjee and Subhrata Gupta</p>
+						<p class="proceedings">2012 IEEE International Conference on Advanced Communication Control and Computing Technologies (ICACCCT)</p>
+						<span>
+						<span id="abstract_launcher_7019215" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+						<span><a href="https://ieeexplore.ieee.org/abstract/document/7019215" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+						</span>
+					</div>
+					<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
+				</div>
+				<div class="abstract_div" id="7019215">Recently Wireless Sensor Networks (WSNs) have garnered a great interest among the research community. WSNs are heavily energy constrained and hence redundant nodes in the network must be allowed to sleep so that the network lifetime may be enhanced. Recently a lot of work has been done to determine the amount of redundancy inherent in a WSN. This paper describes a method that attempts to reduce the redundancy in the network that is distributive in nature and does not use the location information of the nodes. To find out if a node is redundant, the nodes' sensing area overlap is to be found out. The method uses three-circle overlap area as the base case for finding the total overlap over the sensing area of a node by its neighbors. The work here is for static deployment of the sensor nodes.</div>							
+
+				</div>
+			</div>
+
 		</div>
 
 		<div class="flex_col external_profiles">

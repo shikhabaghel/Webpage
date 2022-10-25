@@ -16,7 +16,8 @@
 .publication_record{
 	position: relative;
 	width: 100%;
-	margin: 30px 0px 0px 0px;
+	margin: 10px 0px 0px 0px;
+	border-bottom: 1px solid gray;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -31,6 +32,7 @@
 	position: relative;
 	display: inline-block;
 	width: 30%;
+	min-width: 30%;
 }
 .fig_dimensions{
 	position: relative;
