@@ -16,7 +16,9 @@ body {
 	font-family: "EB Garamond", sans-serif;
 	font-size: 18px;
 	color: rgba(35, 36, 35, 1);
-	position: fixed;
+	position: absolute;
+	width: 100%;
+	margin: auto;
 }
 div {
 	word-wrap: break-word;
