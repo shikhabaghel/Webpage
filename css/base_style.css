@@ -67,10 +67,6 @@ li{
 	align-items: flex-start !important;
 	justify-content: space-around;
 }
-.title_pane{
-	position: relative;
-	width: 100vw;
-}
 .empty_div{
 	position: relative;
 	width: 70vw;
@@ -79,7 +75,6 @@ li{
 	display: flex;
 	align-items: right;
 	justify-content: flex-end;
-	position: relative;
 	width: 75%;
 	margin: 40px 0px 20px 0px;
 	height: 40px;
@@ -124,35 +119,39 @@ li{
 }
 .dashboard{
 	display: flex;
-	justify-content: space-between;
 	flex-direction: row;
-	align-items: center;
 	flex-wrap: wrap;
+	align-items: flext-start;
+	justify-content: space-around;
 	width: 55vw;
-	min-height: 75vh;
 	margin: auto;
 }
-.profile_pic{
-	display: inline-block;
-	width: 35%; 
-}
 .intro_tile{
+	position: relative;
 	width: 55%; 
 	margin: 10px;
 }
-.phd_thesis_tile{
-	width: 55%; 
-	margin: 10px;
+.profile_pic{
+	position: relative;
+	width: 42%; 
+	display: block;
 }
 .contact_details_tile{
-	width: 40%;
+	position: relative;
+	width: 100%;
 	text-align: right;
 	font-weight: 900;
 	font-size: 14px;
 	font-family: "Farsan", sans-serif;
 }
+.phd_thesis_tile{
+	position: relative;
+	width: 45%; 
+	margin: 10px;
+}
 .iit_dharwad_project_tile{
-	width: 95%; 
+	position: relative;
+	width: 45%; 
 	margin: 10px;
 }
 .external_profiles{
