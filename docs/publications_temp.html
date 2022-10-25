@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<!--<link rel="icon" type="image/x-icon" href="images/Initials.jpg">-->
+		<link rel="stylesheet" href="css/base_style.css">
+		<link rel="stylesheet" href="css/timeline.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kotta One">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Farsan">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB Garamond">
+		<script src="js/core.js"></script>
+		<title>Mrinmoy Bhattacharjee | Publications</title>
+	</head>
+
+	<body lang="en-IN" onload="page_setup()">
+
+		<div class="title_pane fig_abstract">
+			<div class="empty_div"></div>
+		</div>
+
+		<div class="flex-container menu_pane">
+			<div></div>
+			<div class="menu_items empty_menu_item">
+				<p class="first_name">Mrinmoy</p> &nbsp;
+				<p class="last_name">Bhattacharjee</p>
+			</div>
+			<div class="menu_items hyperlink"  onclick="window.open('index.html', '_self');">
+				About
+			</div>
+			&emsp;
+			<div class="menu_items hyperlink" onclick="window.open('education.html', '_self');">
+				Education
+			</div>
+			&emsp;
+			<div class="menu_items hyperlink" onclick="window.open('research.html', '_self');">
+				Research
+			</div>
+			&emsp;
+			<div class="menu_items selected_menu">
+				Publications
+			</div>
+			&emsp;
+			<div class="menu_items hyperlink" onclick="window.open('experience.html', '_self');">
+				Experience
+			</div>
+			&emsp;
+			<div class="menu_items hyperlink" onclick="window.open('misc.html', '_self');">
+				Miscellaneous
+			</div>
+		</div>
+
+		<div class="flex-container">
+			<div class="dashboard">
+				
+				<div class="text">
+					<p class="page_subheading">Publications</p>
+
+					<div class="timeline">
+						
+						<!-- 2022 -->
+						<div class="container right">
+							<div class="content">
+								<p class="page_subheading">2022</p>
+
+								<div class="flex_col">
+									<div class="publication_record">
+										<div class="info_div">
+											<p class="title">Speech/music classification using phase-based and magnitude-based features</p>
+											<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
+											<p class="proceedings">Elsevier Speech Communication</p>
+											<span> 
+												<span id="abstract_launcher_S0167639322000887" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+												<span><a href="https://www.sciencedirect.com/science/article/abs/pii/S0167639322000887" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+											</span>
+										</div>
+										<div class="paper_fig"><img src="images/research_fig/Speech_Communication_Jun22.png" class="fig_dimensions"/></div>
+									</div>
+									<div class="abstract_div" id="S0167639322000887"> Detection of speech and music is an essential preprocessing step for many high-level audio-based applications like speaker diarization and music information retrieval. Researchers have previously used various magnitude-based features in this task. In comparison, the phase spectrum has received lesser attention. The phase of a signal is believed to carry non-trivial information that can help determine its audio class. This work explores three existing phase-based features for speech vs. music classification. The potential of phase information is highlighted through statistical significance tests and canonical correlation analyses. The proposed approach is benchmarked against four baseline magnitude-based feature sets. This work also contributes an annotated audio dataset named Movie - MUSNOMIX of 8 h and 20 min duration, comprising seven audio classes, including speech and music. The Movie - MUSNOMIX dataset and widely used public datasets like MUSAN, GTZAN, Scheirer–Slaney, and Muspeak have been used for performance evaluations. In combination with magnitude-based ones, phase-based features improve upon the baseline performance consistently for the datasets used. Moreover, various combinations of phase and magnitude-based features show satisfactory generalization capability over the two datasets. The performances of phase-based features in identifying speech and music signals corrupted with different environmental noise at various SNR levels are also reported. Last but not least, a preliminary study on the efficacy of phase-based features in segmenting continuous sequences of speech and music signals is also provided. The codes used in this work and the contributed dataset have been made freely available.</div>
+								</div>
+
+
+								<div class="flex_col">
+									<div class="publication_record">
+										<div class="info_div">
+											<p class="title">Clean vs. Overlapped Speech-Music Detection Using Harmonic-Percussive Features and Multi-Task Learning</p>
+											<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
+											<p class="proceedings">IEEE/ACM Transactions on Audio, Speech, and Language Processing</p>
+											<span> 
+												<span id="abstract_launcher_9748030" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+												<span><a href="https://ieeexplore.ieee.org/abstract/document/9748030" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+											</span>
+										</div>
+										<div class="paper_fig"><img src="images/research_fig/IEEE_TASLP_Apr22.png" class="fig_dimensions"/></div>
+									</div>
+									<div class="abstract_div" id="9748030">Detection of speech and music signals in isolated and overlapped conditions is an essential preprocessing step for many audio applications. Speech signals have wavy and continuous harmonics, while music signals exhibit horizontally linear and discontinuous harmonic patterns. Music signals also contain more percussive components than speech signals, manifested as vertical striations in the spectrograms. In case of speech music overlap, it might be challenging for automatic feature learning systems to extract class-specific horizontal and vertical striations from the combined spectrogram representation. A pre-processing step of separating the harmonic and percussive components before training might aid the classifier. Thus, this work proposes the use of harmonic-percussive source separation method to generate features for better detection of speech and music signals. Additionally, this work also explores the traditional and cascaded-information multi-task learning (MTL) frameworks to design better classifiers. MTL framework aids the training of the main task by employing simultaneous learning of several related auxiliary tasks. Results have been reported both on synthetically generated speech music overlapped signals and real recordings. Four state-of-the-art approaches are used for performance comparison. Experiments show that harmonic and percussive decomposition of spectrograms perform better as features. Moreover, the MTL-framework based classifiers further improve performances.</div>
+								</div>
+
+
+								<div class="flex_col">
+									<div class="publication_record">
+										<div class="info_div">
+											<p class="title">Speech Music Overlap Detection using Spectral Peak Evolutions</p>
+											<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
+											<p class="proceedings">24th International Conference on Speech and Computer (SPECOM)</p>
+											<span> 
+												<span id="abstract_launcher_X" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+												<span><a href="" target="_blank" class="html_button hyperlink">[Accepted]</a></span>
+											</span>
+										</div>
+										<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
+									</div>
+									<div class="abstract_div" id="X"></div>
+								</div>
+
+
+								<div class="flex_col">
+									<div class="publication_record">
+										<div class="info_div">
+											<p class="title">Foreground-Background Audio Separation using Spectral Peaks based Time-Frequency Masks</p>
+											<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
+											<p class="proceedings">2022 IEEE International Conference on Signal Processing and Communications (SPCOM)</p>
+											<span>
+												<span id="abstract_launcher_9840850" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+												<span><a href="https://ieeexplore.ieee.org/document/9840850" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+											</span>
+										</div>
+										<div class="paper_fig"><img src="images/research_fig/SPCOM_2022.png" class="fig_dimensions"/></div>
+									</div>
+									<div class="abstract_div" id="9840850">The separation of foreground and background sounds can serve as a useful preprocessing step when dealing with real-world audio signals. This work proposes a foreground-background audio separation (FBAS) algorithm that uses spectral peak information for generating time-frequency masks. The proposed algorithm can work without training, is relatively fast, and provides decent audio separation. As a specific use case, the proposed algorithm is used to extract clean foreground signals from noisy speech signals. The quality of foreground speech separated with FBAS is compared with the output of a state-of-the-art deep-learning-based speech enhancement system. Various subjective and objective evaluation measures are computed, which indicate that the proposed FBAS algorithm is effective.</div>
+								</div>
+
+
+								<div class="flex_col">
+									<div class="publication_record">
+										<div class="info_div">
+											<p class="title">Low-Resource Dialect Identification in Ao Using Noise Robust Mean Hilbert Envelope Coefficients</p>
+											<p class="authors">Moakala Tzudir, Mrinmoy Bhattacharjee, Priankoo Sarmah, S. R. Mahadeva Prasanna</p>
+											<p class="proceedings">28th National Conference on Communications (NCC-2022)</p>
+											<span> 
+												<span id="abstract_launcher_X" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+												<span><a href="https://ieeexplore.ieee.org/abstract/document/9806808" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+											</span> 
+										</div>
+										<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
+									</div>
+									<div class="abstract_div" id="X"></div>
+								</div>
+
+							</div>
+						</div>
+
+
+						<!-- 2021 -->
+						<div class="container right">
+							<div class="content">
+								<p class="page_subheading">2021</p>
+
+								<div class="flex_col">
+									<div class="publication_record">
+										<div class="info_div">
+											<p class="title">Automatic Detection of Shouted Speech Segments in Indian News Debates</p>
+											<p class="authors">Shikha Baghel, Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna, and Prithwijit Guha</p>
+											<p class="proceedings">Interspeech 2021</p>
+											<span> 
+												<span id="abstract_launcher_X" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+												<span><a href="https://www.researchgate.net/profile/Prithwijit-Guha/publication/354221495_Automatic_Detection_of_Shouted_Speech_Segments_in_Indian_News_Debates/links/6226069597401151d204a4ff/Automatic-Detection-of-Shouted-Speech-Segments-in-Indian-News-Debates.pdf" target="_blank" class="pdf_button hyperlink">[PDF]</a></span>
+											</span> 
+										</div>
+										<div class="paper_fig"><img src="images/research_fig/Interspeech_21.png" class="fig_dimensions"/></div>
+									</div>
+									<div class="abstract_div" id="X"></div>																
+								</div>
+
+
+								<div class="flex_col">
+									<div class="publication_record">
+										<div class="info_div">
+											<p class="title">Detection of Speech Overlapped with Low-Energy Music using Pyknograms</p>
+											<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
+											<p class="proceedings">27th National Conference on Communications (NCC-2021)</p>
+											<span> 
+												<span id="abstract_launcher_X" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+												<span><a href="https://ieeexplore.ieee.org/abstract/document/9530150" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+											</span> 
+										</div>
+										<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
+									</div>
+									<div class="abstract_div" id="X"></div>																
+								</div>
+
+							</div>
+						</div>
+
+
+						<!-- 2020 -->
+						<div class="container right">
+							<div class="content">
+								<p class="page_subheading">2020</p>
+
+								<div class="flex_col">
+									<div class="publication_record">
+										<div class="info_div">
+											<p class="title">Speech/Music Classification Using Features From Spectral Peaks</p>
+											<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
+											<p class="proceedings">IEEE/ACM Transactions on Audio, Speech, and Language Processing</p>
+											<span> 
+												<span id="abstract_launcher_9089263" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+												<span><a href="https://ieeexplore.ieee.org/abstract/document/9089263" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+											</span>
+										</div>
+										<div class="paper_fig"><img src="images/research_fig/IEEE_TASLP_Apr20.png" class="fig_dimensions"/></div>
+									</div>
+									<div class="abstract_div" id="9089263">Spectrograms of speech and music contain distinct striation patterns. Traditional features represent various properties of the audio signal but do not necessarily capture such patterns. This work proposes to model such spectrogram patterns using a novel Spectral Peak Tracking (SPT) approach. Two novel time-frequency features for speech vs. music classification are proposed. The proposed features are extracted in two stages. First, SPT is performed to track a preset number of highest amplitude spectral peaks in an audio interval. In the second stage, the location and amplitudes of these peak traces are used to compute the proposed feature sets. The first feature involves the computation of mean and standard deviation of peak traces. The second feature is obtained as averaged component posterior probability vectors of Gaussian mixture models learned on the peak traces. Speech vs. music classification is performed by training various binary classifiers on these proposed features. Three standard datasets are used to evaluate the efficiency of the proposed features for speech/music classification. The proposed features are benchmarked against five baseline approaches. Finally, the best-proposed feature is combined with two contemporary deep-learning based features to show that such combinations can lead to more robust speech vs. music classification systems.</div>
+								</div>
+								
+
+								<div class="flex_col">
+									<div class="publication_record">
+										<div class="info_div">
+											<p class="title">Classification of Speech vs. Speech with Background Music</p>
+											<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna and Prithwijit Guha</p>
+											<p class="proceedings">2020 IEEE International Conference on Signal Processing and Communications (SPCOM)</p>
+											<span> 
+												<span id="abstract_launcher_X" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+												<span><a href="https://ieeexplore.ieee.org/abstract/document/9179491" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+											</span> 
+										</div>
+										<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
+									</div>
+									<div class="abstract_div" id="X"></div>																
+								</div>
+
+							</div>
+						</div>
+
+
+						<!-- 2019 -->
+						<div class="container right">
+							<div class="content">
+								<p class="page_subheading">2019</p>
+
+								<div class="flex_col">
+									<div class="publication_record">
+										<div class="info_div">
+											<p class="title">Shouted and Normal Speech Classification Using 1D CNN</p>
+											<p class="authors">Shikha Baghel, Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna, and Prithwijit Guha</p>
+											<p class="proceedings">8th International Conference on Pattern Recognition and Machine Intelligence</p>
+											<span> 
+												<span id="abstract_launcher_X" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+												<span><a href="https://link.springer.com/chapter/10.1007/978-3-030-34872-4_52" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+											</span> 
+										</div>
+										<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
+									</div>
+									<div class="abstract_div" id="X"></div>																
+								</div>
+
+							</div>
+						</div>
+
+
+						<!-- 2018 -->
+						<div class="container right">
+							<div class="content">
+								<p class="page_subheading">2018</p>
+
+								<div class="flex_col">
+									<div class="publication_record">
+										<div class="info_div">
+											<p class="title">Time-frequency audio features for speech-music classification</p>
+											<p class="authors">Mrinmoy Bhattacharjee, S. R. Mahadeva Prasanna, and Prithwijit Guha</p>
+											<p class="proceedings">arXiv</p>
+											<span> 
+												<span id="abstract_launcher_X" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+												<span><a href="https://arxiv.org/abs/1811.01222" target="_blank" class="html_button hyperlink">[HTML]</a></li></span>
+											</span>
+										</div>
+										<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
+									</div>
+									<div class="abstract_div" id="X"></div>																
+								</div>
+
+							</div>
+						</div>
+
+
+						<!-- 2014 -->
+						<div class="container right">
+							<div class="content">
+								<p class="page_subheading">2014</p>
+
+								<div class="flex_col">
+									<div class="publication_record">
+										<div class="info_div">
+											<p class="title">Determining redundant nodes in a location unaware Wireless Sensor Network</p>
+											<p class="authors">Mrinmoy Bhattacharjee and Subhrata Gupta</p>
+											<p class="proceedings">2012 IEEE International Conference on Advanced Communication Control and Computing Technologies (ICACCCT)</p>
+											<span>
+												<span id="abstract_launcher_7019215" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+												<span><a href="https://ieeexplore.ieee.org/abstract/document/7019215" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+											</span>
+										</div>
+										<div class="paper_fig"><img src="" class="fig_dimensions"/></div>
+									</div>
+									<div class="abstract_div" id="7019215">Recently Wireless Sensor Networks (WSNs) have garnered a great interest among the research community. WSNs are heavily energy constrained and hence redundant nodes in the network must be allowed to sleep so that the network lifetime may be enhanced. Recently a lot of work has been done to determine the amount of redundancy inherent in a WSN. This paper describes a method that attempts to reduce the redundancy in the network that is distributive in nature and does not use the location information of the nodes. To find out if a node is redundant, the nodes' sensing area overlap is to be found out. The method uses three-circle overlap area as the base case for finding the total overlap over the sensing area of a node by its neighbors. The work here is for static deployment of the sensor nodes.</div>																
+
+								</div>
+
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+<!--
+				<div class="profile_pic">
+					<img src="images/Profile_Pic_candid.jpg" width="300px">
+				</div>
+-->
+
+			</div>
+		</div>
+
+		<div class="flex_col external_profiles">
+			<a href="https://scholar.google.co.in/citations?user=Xf2X1xIAAAAJ&hl=en" target="_blank"><img src="images/google_scholar.jpeg" width="40px" class="logo"></a>
+			<a href="https://www.researchgate.net/profile/Mrinmoy-Bhattacharjee" target="_blank"><img src="images/researchgate.png" width="35px" class="logo"></a>
+			<a href="https://www.linkedin.com/in/mrinmoy-bhattacharjee-77244b82/" target="_blank"><img src="images/linkedin.png" width="40px" class="logo"></a>
+			<a href="https://github.com/mrinmoy-iitg" target="_blank"><img src="images/github.png" width="40px" class="logo"></a>
+		</div>
+
+		<div class="flex-container">
+			<div class="footer">
+				&#169; Copyright 2022 Mrinmoy Bhattacharjee. Hosted by &nbsp; <a href="https://pages.github.com/" target="_blank" class="no_link_deco">Github Pages</a>. Last updated: &nbsp; <b id="last_updated" class="no_link_deco"></b>
+			</div>
+		</div>
+		
+	</body>
+
+</html>

@@ -14,7 +14,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 body {
 	font-family: "EB Garamond", sans-serif;
-	font-size: 20px;
+	font-size: 18px;
+	color: rgba(35, 36, 35, 1)
 }
 div {
 	word-wrap: break-word;
@@ -34,7 +35,7 @@ li{
 .paper_list{
 	display: block;
 	padding: 5px;
-	border: 0.5px dotted black;
+	border: 0.5px dotted rgba(54, 56, 55, 0.3);
 	margin: 10px;
 }
 .paper_list:hover{
@@ -67,12 +68,13 @@ li{
 	width: 70vw;
 }
 .menu_pane{
-	margin: 40px 0px 0px 0px;
+	margin: 40px 0px 20px 0px;
 	width: 75vw;
 	/*background-image: linear-gradient(to right, rgba(67, 140, 176, 1), rgba(67, 140, 176, 0.75), rgba(67, 140, 176, 0.5), rgba(67, 140, 176, 0));*/
 	height: 40px;
 	align-items: left;
 	justify-content: flex-end;
+	box-shadow: 0px 3px 5px 5px rgba(54, 56, 55, 0.1);
 }
 .menu_items{
 	display: flex;
@@ -93,9 +95,20 @@ li{
 	border-radius: 3px;
 }
 .empty_menu_item{
-	display: flex;
-	height: 35px;
-	width: 75px;
+	margin: 0px 10px 0px 0px;
+	border-right: 1px solid rgba(54, 56, 55, 1);
+}
+.empty_menu_item:hover{
+	border-bottom: 5px solid transparent;
+}
+.first_name{
+	font-size: 24px;
+	color: rgba(54, 56, 55, 1);
+	font-weight: 900;
+}
+.last_name{
+	font-size: 24px;
+	color: gray;
 }
 .hyperlink{
 	cursor: pointer;
@@ -104,8 +117,7 @@ li{
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-start;
-	width: 85vw;
-	min-width: 80vw;
+	width: 55vw;
 	min-height: 75vh;
 }
 .text{
@@ -140,11 +152,13 @@ li{
 	height: 50px;
 	border-top: 1px solid rgba(40, 40, 117, 1);
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-end;
 	align-items: center;
-	background-color: rgba(40, 40, 117, 1);
-	color: white;
-	font-weight: 900;
+	padding: 0px 100px 0px 0px;
+	background-color: rgba(54, 56, 55, 1); /* rgba(40, 40, 117, 1); */
+	color: gray;
+	font-weight: 500;
+	font-size: 14px;
 }
 .logo:hover{
 	transform:scale(1.3,1.3);
@@ -155,7 +169,7 @@ li{
 	padding: 10px 0px 10px 0px;
 	width:20%; 
 	border-radius: 5px;
-	border-top: 1px solid black;
+	border-top: 1px solid rgba(54, 56, 55, 0.3);
 }
 .left_col{
 	width: 20%;
@@ -167,4 +181,28 @@ li{
 	background-color: rgba(40, 40, 117, 1);
 	color: white;
 	font-weight: 900;
+}
+.no_link_deco{
+	text-decoration: none;
+	color: white;
+	background-color: rgba(54, 56, 55, 1);
+	font-size: 14px;
+}
+.abstract_button{
+	text-decoration: none;
+	color: blue;
+	font-weight: 900;
+	font-size: 14px;
+}
+.pdf_button{
+	text-decoration: none;
+	color: rgb(227, 5, 68);
+	font-weight: 900;
+	font-size: 14px;
+}
+.html_button{
+	text-decoration: none;
+	color: rgb(94, 158, 74);
+	font-weight: 900;
+	font-size: 14px;
 }

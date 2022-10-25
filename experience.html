@@ -9,12 +9,11 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kotta One">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Farsan">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB Garamond">
-		<title>Mrinmoy's Web Address</title>
+		<script src="js/core.js"></script>
+		<title>Mrinmoy Bhattacharjee | Experience</title>
 	</head>
 
-	<body>
-
-	<body lang="en-IN">
+	<body lang="en-IN" onload="page_setup()">
 
 		<div class="title_pane flex_row">
 			<div class="empty_div"></div>
@@ -22,6 +21,10 @@
 
 		<div class="flex-container menu_pane">
 			<div></div>
+			<div class="menu_items empty_menu_item">
+				<p class="first_name">Mrinmoy</p> &nbsp;
+				<p class="last_name">Bhattacharjee</p>
+			</div>
 			<div class="menu_items hyperlink"  onclick="window.open('index.html', '_self');">
 				About
 			</div>
@@ -45,14 +48,13 @@
 			<div class="menu_items hyperlink" onclick="window.open('misc.html', '_self');">
 				Miscellaneous
 			</div>
-			<div class="empty_menu_item">
-			</div>
 		</div>
 
 		<div class="flex-container">
 			<div class="dashboard">
 				<div class="text">
-					<p class="page_heading">Work Experience</p>
+					<p class="page_subheading">Work Experience</p>
+					<hr style="width:100%;color: rgba(54, 56, 55, 0.5);">
 
 					<table>
 						<tr class="record_row">
@@ -189,11 +191,14 @@
 						</tr>
 					</table>
 
-
 				</div>
+
+<!--
 				<div class="profile_pic">
 					<img src="images/Profile_Pic_candid.jpg" width="300px">
 				</div>
+-->
+
 			</div>
 		</div>
 
@@ -206,7 +211,7 @@
 
 		<div class="flex-container">
 			<div class="footer">
-				Copyright: Mrinmoy Bhattacharjee (2022)
+				&#169; Copyright 2022 Mrinmoy Bhattacharjee. Hosted by &nbsp; <a href="https://pages.github.com/" target="_blank" class="no_link_deco">Github Pages</a>. Last updated: &nbsp; <b id="last_updated" class="no_link_deco"></b>
 			</div>
 		</div>
 		
