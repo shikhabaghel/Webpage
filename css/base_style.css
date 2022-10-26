@@ -123,13 +123,14 @@ li{
 	flex-wrap: wrap;
 	align-items: flext-start;
 	justify-content: space-around;
-	width: 55vw;
+	width: 65vw;
 	margin: auto;
 }
 .intro_tile{
 	position: relative;
-	width: 55%; 
+	width: 50%; 
 	margin: 10px;
+	margin: 0px 0px 20px 0px;
 }
 .profile_pic{
 	position: relative;
@@ -139,20 +140,24 @@ li{
 .contact_details_tile{
 	position: relative;
 	width: 100%;
-	text-align: right;
+	text-align: center;
 	font-weight: 900;
 	font-size: 14px;
 	font-family: "Farsan", sans-serif;
+	border: 1px solid black;
+	margin: 0px 0px 20px 0px;
 }
 .phd_thesis_tile{
 	position: relative;
 	width: 45%; 
 	margin: 10px;
+	margin: 0px 0px 20px 0px;
 }
 .iit_dharwad_project_tile{
 	position: relative;
 	width: 45%; 
 	margin: 10px;
+	margin: 0px 0px 20px 0px;
 }
 .external_profiles{
 	position: fixed;
