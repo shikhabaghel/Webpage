@@ -121,6 +121,7 @@ li{
 	justify-content: space-around;
 	width: 65vw;
 	margin: auto;
+	padding: 50px 0px 50px 0px;
 }
 .intro_tile{
 	position: relative;
