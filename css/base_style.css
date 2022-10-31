@@ -111,6 +111,9 @@ li{
 .hyperlink{
 	cursor: pointer;
 }
+.title_label{
+	width: 95%;
+}
 .dashboard{
 	position: relative;
 	top: 5vw;
@@ -121,16 +124,18 @@ li{
 	justify-content: space-around;
 	width: 65vw;
 	margin: auto;
-	padding: 50px 0px 50px 0px;
+	padding: 30px 0px 50px 0px;
 }
 .intro_tile{
 	position: relative;
-	width: 58%; 
+	width: 55%; 
 	text-align: justify;
+	padding: 10px;
 }
 .profile_pic{
 	position: relative;
-	width: 40%; 
+	width: 40%;
+	text-align: center;
 }
 .contact_details_tile{
 	position: relative;
@@ -140,6 +145,12 @@ li{
 	font-size: 14px;
 	font-family: "Farsan", sans-serif;
 	margin: 0px 0px 20px 0px;
+}
+.highlight_text{
+	border: 3px dashed rgba(54, 56, 55, 0.6);
+	border-radius: 10px;
+	padding: 10px;
+	background-color: rgba(189, 232, 79, 1);
 }
 .external_profiles{
 	position: fixed;
@@ -161,19 +172,22 @@ li{
 	position: relative;
 	width: 100%;
 	text-align: right;
+	padding: 5px 0 5px 0;
 }
 .footer{
 	position: relative;
 	top: 5vw;
 	width: 100vw;
-	height: 50px;
+	min-height: 50px;
 	border-top: 1px solid rgba(40, 40, 117, 1);
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	align-items: center;
-	padding: 0px 100px 0px 0px;
-	background-color: rgba(54, 56, 55, 1); /* rgba(40, 40, 117, 1); */
+	padding: 10px 100px 10px 100px;
+	background-color: rgba(54, 56, 55, 1);
 	color: gray;
+}
+.footer_text{
 	font-weight: 500;
 	font-size: 14px;
 }
@@ -204,6 +218,10 @@ li{
 	color: white;
 	background-color: rgba(54, 56, 55, 1);
 	font-size: 14px;
+}
+.alink{
+	text-decoration: none;
+	color: rgba(207, 62, 110, 1);
 }
 .abstract_button{
 	text-decoration: none;
