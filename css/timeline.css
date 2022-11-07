@@ -1,3 +1,10 @@
+.flex_col_group{
+	display: flex;
+	flex-direction: column !important;
+	align-items: flex-start !important;
+	justify-content: space-around;
+	margin-bottom: 25px;
+}
 .year_wise_content {
 	padding: 20px 0px 20px 0px;
 	position: relative;
@@ -5,18 +12,32 @@
 	margin-left: 20px;
 }
 .title{
+	position: relative;
+	width: 100%;
 	font-style: italic;
 }
 .authors{
+	position: relative;
+	width: 100%;
 	font-weight: 900;
+	color: rgba(45, 120, 250, 1);
+	font-style: normal;
 }
-.proceedings{
-	color: gray;
+.other_authors{
+	position: relative;
+	width: 100%;
+	font-weight: 400;
+	color: rgba(45, 120, 250, 0.5);
+	font-style: italic;
+}
+.proceedings{rgba(45, 120, 250, 0.5)
+	position: relative;
+	width: 100%;
+	color: rgba(176, 81, 130, 1);
 }
 .publication_record{
 	position: relative;
 	width: 100%;
-	margin: 10px 0px 0px 0px;
 	border-bottom: 1px solid gray;
 	display: flex;
 	flex-direction: row;
@@ -27,15 +48,19 @@
 	position: relative;
 	display: inline-block;
 	width: 69%;
+	height: 100%;
 }
 .paper_fig{
 	position: relative;
-	display: inline-block;
 	width: 30%;
-	min-width: 30%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 .fig_dimensions{
 	position: relative;
+	max-height: 150px;
 	max-width: 100%;
 }
 .abstract_div{
@@ -43,5 +68,10 @@
 	width: 100%;
 	border: 1px solid rgba(54, 56, 55, 0.1);
 	display: none;
+	padding: 10px;
+	color: rgba(45, 120, 250, 0.8);
+	font-style: italic;
+	font-size: 16px;
+	height: 150px;
+	overflow-y: scroll;
 }
-

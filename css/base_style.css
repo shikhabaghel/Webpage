@@ -41,6 +41,11 @@ th,td {
 li{
 	padding: 5px;
 }
+ul:after, li:after{
+	content:"";
+	display:table;
+	clear:both;
+}
 .flex-container{
 	display: flex;
 	justify-content: space-around;
@@ -150,7 +155,8 @@ li{
 	border: 3px dashed rgba(54, 56, 55, 0.6);
 	border-radius: 10px;
 	padding: 10px;
-	background-color: rgba(189, 232, 79, 1);
+	/*background-color: rgba(189, 232, 79, 1);*/
+	background-color: rgba(33, 191, 115, 0.5);
 }
 .external_profiles{
 	position: fixed;
@@ -240,4 +246,40 @@ li{
 	color: rgb(94, 158, 74);
 	font-weight: 900;
 	font-size: 14px;
+}
+.teaching_exp{
+	position: relative;
+	width: 100%;
+	background-color: rgba(230, 242, 189, 0.8);
+	display: block;
+	border-radius: 5px;
+	padding: 10px;
+}
+.work_exp{
+	position: relative;
+	width: 100%;
+	background-color: rgba(242, 222, 250, 0.8);
+	display: none;
+	border-radius: 5px;
+	padding: 10px;
+}
+.talks{
+	position: relative;
+	width: 100%;
+	background-color: rgba(237, 207, 180, 0.8);
+	display: none;
+	border-radius: 5px;
+	padding: 10px;
+}
+.false_button_div{
+	margin-bottom: 20px;
+}
+.false_button{
+	display: inline;
+	border-radius: 5px;
+	padding: 5px;
+	box-shadow: 0px 0px 3px 3px rgba(35, 36, 35, 0.1);
+}
+#teaching_exp_false_button{
+	background-color: rgba(230, 242, 189, 1);
 }
