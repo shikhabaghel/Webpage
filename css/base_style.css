@@ -13,21 +13,23 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	background: transparent;
 }
 body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	width: 100%;
+	margin: auto;
+	min-height: 100vh;
+	text-align: justify;
 	font-family: "Calibri", sans-serif;
 	font-size: 18px;
 	color: rgba(35, 36, 35, 0.8);
 	background-color: white;
-	/*
-	background-color: rgba(35, 36, 35, 0.8);
-	color: white;
-	*/
-	position: absolute;
-	width: 100%;
-	text-align: justify;
-	margin: auto;
 }
 div {
 	word-wrap: break-word;
+	border: 1px solid black;
 }
 table{
 	position: relative;
@@ -68,13 +70,15 @@ ul:after, li:after{
 	width: 70vw;
 }
 .menu_pane{
+	position: fixed;
+	width: 80%;
+	margin: auto;
+	padding-top: 1%;
+	height: 5vw;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	width: 80vw;
-	position: fixed;
-	height: 5vw;
-	left: 10vw;
+	height: 10%;
 	background-color: white;
 	box-shadow: 0px 3px 5px 5px rgba(54, 56, 55, 0.1);
 	z-index: 1;
@@ -120,18 +124,20 @@ ul:after, li:after{
 	width: 95%;
 }
 .dashboard{
-	position: relative;
-	top: 5vw;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-items: flext-start;
+	align-items: start;
 	justify-content: space-around;
-	width: 65vw;
+	position: relative;
+	top: 5vw;
+	width: 65%;
 	margin: auto;
-	padding: 30px 0px 50px 0px;
+	min-height: 100%;
+	padding-top: 2vw;
+	padding-bottom: 3vw;
 }
-.intro_tile{
+.intro_tile{space-around
 	position: relative;
 	width: 55%; 
 	text-align: justify;
@@ -155,7 +161,6 @@ ul:after, li:after{
 	border: 3px dashed rgba(54, 56, 55, 0.6);
 	border-radius: 10px;
 	padding: 10px;
-	/*background-color: rgba(189, 232, 79, 1);*/
 	background-color: rgba(33, 191, 115, 0.5);
 }
 .external_profiles{
@@ -183,13 +188,13 @@ ul:after, li:after{
 .footer{
 	position: relative;
 	top: 5vw;
-	width: 100vw;
-	min-height: 50px;
-	border-top: 1px solid rgba(40, 40, 117, 1);
+	width: 100%;
+	margin: auto;
+	padding-top: 25px;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: row;
 	align-items: center;
-	padding: 10px 100px 10px 100px;
+	justify-content: space-around;
 	background-color: rgba(54, 56, 55, 1);
 	color: gray;
 }
@@ -246,40 +251,4 @@ ul:after, li:after{
 	color: rgb(94, 158, 74);
 	font-weight: 900;
 	font-size: 14px;
-}
-.teaching_exp{
-	position: relative;
-	width: 100%;
-	background-color: rgba(230, 242, 189, 0.8);
-	display: block;
-	border-radius: 5px;
-	padding: 10px;
-}
-.work_exp{
-	position: relative;
-	width: 100%;
-	background-color: rgba(242, 222, 250, 0.8);
-	display: none;
-	border-radius: 5px;
-	padding: 10px;
-}
-.talks{
-	position: relative;
-	width: 100%;
-	background-color: rgba(237, 207, 180, 0.8);
-	display: none;
-	border-radius: 5px;
-	padding: 10px;
-}
-.false_button_div{
-	margin-bottom: 20px;
-}
-.false_button{
-	display: inline;
-	border-radius: 5px;
-	padding: 5px;
-	box-shadow: 0px 0px 3px 3px rgba(35, 36, 35, 0.1);
-}
-#teaching_exp_false_button{
-	background-color: rgba(230, 242, 189, 1);
 }

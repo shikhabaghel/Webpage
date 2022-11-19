@@ -6,6 +6,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 		<!--<link rel="icon" type="image/x-icon" href="images/Initials.jpg">-->
 		<link rel="stylesheet" href="css/base_style.css">
+		<link rel="stylesheet" href="css/experiences.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kotta One">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Farsan">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB Garamond">
@@ -49,15 +50,12 @@
 		<div class="dashboard">
 			
 			<div class="false_button_div">
-				<p class="page_subheading false_button hyperlink" id="teaching_exp_false_button" onclick=focus_segment("teaching_exp")>Teaching Experience</p> | 
-				<p class="page_subheading false_button hyperlink" id="work_exp_false_button" onclick=focus_segment("work_exp")>Work Experience</p> | 
-				<p class="page_subheading false_button hyperlink" id="talks_false_button" onclick=focus_segment("talks")>Talks/Presentations</p>
+				<div class="false_button hyperlink" id="teaching_exp_false_button" onclick=focus_segment_experiences("teaching_exp")>Teaching Experience</div>
+				<div class="false_button hyperlink" id="work_exp_false_button" onclick=focus_segment_experiences("work_exp")>Work Experience</div>
+				<div class="false_button hyperlink" id="talks_false_button" onclick=focus_segment_experiences("talks")>Talks/Presentations</div>
 			</div>
 
-<!--
-			<p class="page_subheading">Teaching Experience</p>
-			<hr style="width:100%;color: rgba(54, 56, 55, 0.5);">
--->
+
 			<div class="teaching_exp" id="teaching_exp">
 				<table>
 					<tr><th width="20%">Title</th><th width="20%">Duration</th><th width="60%">Courses</th></tr>
@@ -68,14 +66,9 @@
 						<td>Teaching Assistant during M.Tech.</td><td>Aug 2012-May 2014</td><td>C programming laboratory</td>
 					</tr>
 				</table>
-				<br/><br/><br/><br/><br/><br/>
 			</div>
 
 
-<!--
-			<p class="page_subheading">Work Experience</p>
-			<hr style="width:100%;color: rgba(54, 56, 55, 0.5);">
--->
 			<div class="work_exp" id="work_exp">
 				<table>
 					<tr class="record_row">
@@ -91,13 +84,7 @@
 						<tr>
 							<td class="left_col">PI</td><td class="right_col">Prof. S. R. Mahadeva Prasanna, Dept. EE, IIT Dharwad, Karnataka, India<td>
 						</tr>
-	<!--
 						<tr>
-							<td>Duration</td><td>Apr 2022 - present</td>
-						</tr>
-	-->
-						<tr>
-							<!--<td>Description</td>-->
 							<td colspan=2>Working as a Senior Project Engineer in a MeitY, Govt. of India sponsored project for developing speaker recognition systems for Indian languages. Entrusted with developing an open-source Python-based speaker recognition toolkit that consists of state-of-the-art methods for encouraging further research in the community. Developing the project website, system demo prototypes, and web-based portals to provide hands-on experience of the systems to beginners. </td>
 						</tr>
 						</table>
@@ -117,13 +104,7 @@
 						<tr>
 							<td class="left_col">PI</td><td class="right_col">Dean, Research and Development Section, IIT Guwahati, Assam, India<td>
 						</tr>
-	<!--
 						<tr>
-							<td>Duration</td><td>May 2015 - Dec 2015</td>
-						</tr>
-	-->
-						<tr>
-							<!--<td>Description</td>-->
 							<td colspan=2>Worked as lead programmer for developing a complete automation solution (RnDOPS) for the Research and Development Section, IIT Guwahati. RnDOPS was developed using JSP/Java in the backend and HTML/CSS/Javascript in the frontend. The RnDOPS system is still fully operational at IIT Guwahati.</td>
 						</tr>
 						</table>
@@ -144,13 +125,7 @@
 						<tr>
 							<td class="left_col">PI</td><td class="right_col">Prof. S. R. Mahadeva Prasanna, Dept. EEE, IIT Guwahati, Assam, India</td>
 						</tr>
-	<!--
 						<tr>
-							<td>Duration</td><td>Aug 2014 - Dec 2015</td>
-						</tr>
-	-->
-						<tr>
-							<!--<td>Description</td>-->
 							<td colspan=2>Worked as Assistant Project Engineer in a DST, Govt. of India funded project of recognizing online handwriting for the Assamese language. Responsibilities included feature designing and handwriting recognition system development. Used GMM, SVM, and HMM for the recognition systems and programmed in Matlab/C.</td>
 						</tr>
 						</table>
@@ -171,13 +146,7 @@
 						<tr>
 							<td class="left_col">Supervisor</td><td class="right_col">IT Dept., Hindustan Paper Corporation Limited, Panchgram, Assam, India</td>
 						</tr>
-	<!--
 						<tr>
-							<td>Duration</td><td>1<sup>st</sup> to 30<sup>th</sup> June 2010</td>
-						</tr>
-	-->
-						<tr>
-							<!--<td>Description</td>-->
 							<td colspan=2>Underwent a month-long training. Worked on a project for developing an Enterprise Resource Planning based system for the HPCL Health Center.</td>
 						</tr>
 						</table>
@@ -198,13 +167,7 @@
 						<tr>
 							<td class="left_col">Supervisor</td><td class="right_col">Prof. Anup Kumar Gogoi, Dept. of EEE, IIT Guwahati, Assam, India</td>
 						</tr>
-	<!--
 						<tr>
-							<td>Duration</td><td>May-Jun 2009</td>
-						</tr>
-	-->
-						<tr>
-							<!--<td>Description</td>-->
 							<td colspan=2>Developed an automatic Quiz master program in C. The program let a user play a game of Quiz and scores their performance over a set of randomized questions.</td>
 						</tr>
 						</table>
@@ -214,23 +177,18 @@
 			</div>
 
 
-<!--
-			<p class="page_subheading">Talks/Presentations</p>
-			<hr style="width:100%;color: rgba(54, 56, 55, 0.5);">
--->
 			<div class="talks" id="talks">
 				&bull; Conducted practical sessions in a SERB sponsored <b>High End Workshop on Fundamentals of Deep Learning</b> jointly organized by Indian Institute of Technology Guwahati and Research for Resurgance Foundation Nagpur, held from 12<sup>th</sup> to 18<sup>th</sup> Sep 2022.<br/><br/>
 
 				&bull; Delivered a lecture in a workshop on <b>Introduction to Machine Learning using Python</b> organized by the Research Scholar Forum, Dept. of EEE, IIT Guwahati during 16<sup>th</sup> and 17<sup>th</sup> Nov 2019.<br/><br/>
 
 				&bull; Conducted hands-on courses in a one-week Faculty Development Programme on <b>Artificial Intelligence and Machine Learning</b>, jointly organized by Electronics and ICT Academies, held from 17<sup>th</sup> to 21<sup>st</sup> Dec 2018 through National Knowledge Network of MeitY, Govt. of India.
-				<br/><br/><br/><br/><br/>
 			</div>
-
 
 		</div>
 
 
+		<!-- Right Pane -->
 		<div class="flex_col external_profiles">
 			<a href="https://scholar.google.co.in/citations?user=Xf2X1xIAAAAJ&hl=en" target="_blank"><img src="images/google_scholar.jpeg" width="40px" class="logo"></a>
 			<a href="https://www.researchgate.net/profile/Mrinmoy-Bhattacharjee" target="_blank"><img src="images/researchgate.png" width="35px" class="logo"></a>
@@ -238,17 +196,18 @@
 			<a href="https://github.com/mrinmoy-iitg" target="_blank"><img src="images/github.png" width="40px" class="logo"></a>
 		</div>
 
-		<div class="flex-container">
-			<div class="footer">
-				<div class="footer_text">
-					Mrinmoy Bhattacharjee<br/>Dept. of Electronics and Electrical Engineering<br/>Indian Institute of Technology Guwahati<br/>Guwahati-781039, Assam, India<br/>Email: mrinmoy[dot]bhattacharjee[at]iitg[dot]ac[dot]in
-				</div>
-				<div class="footer_text">
-				&#169; Copyright 2022 Mrinmoy Bhattacharjee. Hosted by &nbsp; <a href="https://pages.github.com/" target="_blank" class="no_link_deco">Github Pages</a>. Last updated: &nbsp; <b id="last_updated" class="no_link_deco"></b>
-				</div>
+
+
+		<!-- Footer -->
+		<div class="footer">
+			<div class="footer_text">
+				Mrinmoy Bhattacharjee<br/>Dept. of Electronics and Electrical Engineering<br/>Indian Institute of Technology Guwahati<br/>Guwahati-781039, Assam, India<br/>Email: mrinmoy[dot]bhattacharjee[at]iitg[dot]ac[dot]in
+			</div>
+			<div class="footer_text">
+			&#169; Copyright 2022 Mrinmoy Bhattacharjee. Hosted by &nbsp; <a href="https://pages.github.com/" target="_blank" class="no_link_deco">Github Pages</a>. Last updated: &nbsp; <b id="last_updated" class="no_link_deco"></b>
 			</div>
 		</div>
-		
-	</body>
 
+
+	</body>
 </html>
