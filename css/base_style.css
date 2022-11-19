@@ -29,7 +29,6 @@ body {
 }
 div {
 	word-wrap: break-word;
-	border: 1px solid black;
 }
 table{
 	position: relative;
