@@ -86,3 +86,14 @@ function focus_segment_highlights(id){
 	}
 }
 
+function open_pane(){
+	if (document.getElementById("menu_status").value=="closed"){
+		document.getElementById("menu_pane").style.display = "block";
+		document.getElementById("menu_status").value = "open";
+	}
+	else if (document.getElementById("menu_status").value=="open"){
+		document.getElementById("menu_pane").style.display = "none";
+		document.getElementById("menu_status").value = "closed";
+	}
+}
+
