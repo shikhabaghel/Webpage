@@ -1,225 +1,4 @@
-/*
-For mobile screens
-*/
-@media only screen and (max-width: 600px)
-{
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
-		margin: 0;
-		padding: 0;
-		border: 0;
-		outline: 0;
-		vertical-align: baseline;
-		background: transparent;
-	}
-	body {
-		position: relative;
-		width: 100vw;
-		margin: auto;
-		min-height: 100vh;
-		text-align: justify;
-		font-family: "Calibri", sans-serif;
-		color: rgba(35, 36, 35, 0.8);
-		background-color: white;
-	}
-	div {
-		word-wrap: break-word;
-	}
-	table{
-		position: relative;
-		width: 100%;
-		border-collapse: collapse;
-	}
-	th,td {
-		padding: 5px;
-		text-align: left;
-	}
-	li{
-		padding: 5px;
-	}
-	ul:after, li:after{
-		content:"";
-		display:table;
-		clear:both;
-	}
-	.empty_div{
-		position: relative;
-		width: 70vw;
-	}
-	.open_menu_pane{
-		position: relative;
-		width: 100%;
-		margin: auto;
-		text-align: left;
-		font-size: 40px;
-		background-color: rgba(54, 56, 55, 1);
-		color: white;
-		padding: 0 0 0 5vw;
-	}
-	.menu_pane{
-		position: relative;
-		width: 100%;
-		margin: auto;
-		background-color: white;
-		display: none;
-	}
-	.menu_items{
-		width: 80%;
-		margin: auto;
-		font-weight: 900;
-		padding: 3%;
-	}
-	.selected_menu{
-		background-color: rgba(80, 86, 250, 1);
-		color: white;
-	}
-	.empty_menu_item{
-		margin: 0px 10px 0px 0px;
-	}
-	.empty_menu_item:hover{
-		border-bottom: 5px solid transparent;
-	}
-	.first_name{
-		color: rgba(54, 56, 55, 1);
-		font-weight: 900;
-		display: inline;
-	}
-	.last_name{
-		color: gray;
-		display: inline;
-	}
-	.hyperlink{
-		cursor: pointer;
-	}
-	.title_label{
-		width: 95%;
-	}
-	.dashboard{
-		position: relative;
-		width: 90%;
-		margin: auto;
-		min-height: 100%;
-		padding: 2%;
-	}
-	.intro_tile{space-around
-		position: relative;
-		width: 100%; 
-		margin: auto;
-		text-align: justify;
-	}
-	.profile_pic{
-		position: relative;
-		max-width: 100%;
-		margin: auto;
-		text-align: center;
-	}
-	.contact_details_tile{
-		position: relative;
-		width: 100%;
-		margin: auto;
-		text-align: center;
-		font-weight: 900;
-		font-family: "Farsan", sans-serif;
-	}
-	.highlight_text{
-		border: 3px dashed rgba(54, 56, 55, 0.6);
-		border-radius: 10px;
-		background-color: rgba(33, 191, 115, 0.5);
-		padding: 2%;
-	}
-	.external_profiles{
-		position: relative;
-		height: 3vh;
-		margin: auto;
-		text-align: center;
-	}
-	.page_heading{
-		font-family: "Farsan", sans-serif;
-		text-align: center;
-		margin: 10% 0px 10% 0px;
-	}
-	.page_subheading{
-		margin: 20px 0px 0px 0px;
-		font-family: "Farsan", sans-serif;
-		position: relative;
-		width: 100%;
-		text-align: left;
-		margin: 5% 0px 5% 0px;
-		background-color: rgba(54, 56, 55, 0.1);
-		font-size: 150%;
-		padding: 3%;
-	}
-	.footer{
-		position: relative;
-		width: 95%;
-		margin: auto;
-		background-color: rgba(54, 56, 55, 1);
-		color: gray;
-		padding: 5%;
-	}
-	.footer_text{
-		font-weight: 500;
-		margin: 3%;
-		text-align: center;
-	}
-	.logo{
-		max-height: 100%;
-	}
-	.logo:hover{
-		transform:scale(1.3,1.3);
-		-webkit-transform:scale(1.3,1.3);
-		-moz-transform:scale(1.3,1.3);	
-	}
-	.record_row{
-		padding: 10px 0px 10px 0px;
-		width:20%; 
-		border-radius: 5px;
-		border-bottom: 1px solid rgba(54, 56, 55, 0.3);
-	}
-	.left_col{
-		width: 20%;
-	}
-	.right_col{
-		width: 80%;
-	}
-	.blue_background{
-		background-color: rgba(40, 40, 117, 1);
-		color: white;
-		font-weight: 900;
-	}
-	.no_link_deco{
-		text-decoration: none;
-		color: white;
-		background-color: rgba(54, 56, 55, 1);
-	}
-	.alink{
-		text-decoration: none;
-		color: rgba(207, 62, 110, 1);
-	}
-	.abstract_button{
-		text-decoration: none;
-		color: blue;
-		font-weight: 900;
-	}
-	.pdf_button{
-		text-decoration: none;
-		color: rgb(227, 5, 68);
-		font-weight: 900;
-	}
-	.html_button{
-		text-decoration: none;
-		color: rgb(94, 158, 74);
-		font-weight: 900;
-	}
-	.research_word_cloud{
-		max-width: 100%;
-	}
-}
-
-
-/*
-For laptop screens
-*/
-@media only screen and (min-width: 600px) and (max-width: 2048px)
+@media only screen and (min-width: 450px) and (max-width: 2048px)
 {
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
 		margin: 0;
@@ -362,7 +141,7 @@ For laptop screens
 	}
 	.profile_pic{
 		position: relative;
-		max-width: 40%;
+		width: 40%;
 		text-align: center;
 	}
 	.contact_details_tile{
@@ -382,14 +161,10 @@ For laptop screens
 	}
 	.external_profiles{
 		position: fixed;
-		top: 20%;
-		right: 1%;
-		width: 3%;
-		height: 50%;
-		display: flex;
-		flex-direction: column !important;
-		align-items: flex-start !important;
-		justify-content: space-around;
+		top: 20vh;
+		right: 10px;
+		width: 50px;
+		height: 40vh;
 	}
 	.page_heading{
 		font-family: "Farsan", sans-serif;
@@ -422,9 +197,6 @@ For laptop screens
 	.footer_text{
 		font-weight: 500;
 		font-size: 14px;
-	}
-	.logo{
-		max-width: 100%;
 	}
 	.logo:hover{
 		transform:scale(1.3,1.3);
@@ -475,12 +247,6 @@ For laptop screens
 		color: rgb(94, 158, 74);
 		font-weight: 900;
 		font-size: 14px;
-	}
-	.open_menu_pane{
-		display: none;
-	}
-	.research_word_cloud{
-		max-width: 50%;
 	}
 }
 

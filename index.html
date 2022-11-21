@@ -2,10 +2,9 @@
 
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=yes">
+		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-		<!--<link rel="icon" type="image/x-icon" href="images/Initials.jpg">-->
-		<link rel="stylesheet" href="css/base_style.css">
+		<link rel="stylesheet" href="css/base_style_mobile.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kotta One">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Farsan">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB Garamond">
@@ -15,35 +14,53 @@
 
 	<body lang="en-IN" onload="page_setup()">
 
-		<div class="menu_pane">
-			<div class="">
-			</div>
+		<div class="open_menu_pane" onclick="open_pane()">
+			&equiv;
+			<input type="hidden" value="closed" id="menu_status">
+		</div>
+
+		<div class="menu_pane" id="menu_pane">
 			<div class="menu_items selected_menu">
 				About
 			</div>
-			&emsp;
 			<div class="menu_items hyperlink" onclick="window.open('education.html', '_self');">
 				Skills
 			</div>
-			&emsp;
 			<div class="menu_items hyperlink" onclick="window.open('research.html', '_self');">
 				Research
 			</div>
-			&emsp;
 			<div class="menu_items hyperlink" onclick="window.open('publications.html', '_self');">
 				Publications
 			</div>
-			&emsp;
 			<div class="menu_items hyperlink" onclick="window.open('experience.html', '_self');">
 				Experience
 			</div>
-			&emsp;
 			<div class="menu_items hyperlink" onclick="window.open('misc.html', '_self');">
 				Highlights
 			</div>
 		</div>
 
 		<div class="dashboard">
+
+			<div class="profile_pic">
+				<img src="images/Profile_Pic_candid.jpg" style="position: relative; max-width: 100%;">
+				<div class="contact_details_tile">
+					<p>Mrinmoy Bhattacharjee</p>
+					<p>Dept. of Electronics and Electrical Engineering</p>
+					<p>Indian Institute of Technology Guwahati</p>
+					<p>Guwahati-781039, Assam, India</p>
+					<p>Email: mrinmoy[dot]bhattacharjee[at]iitg[dot]ac[dot]in</p>
+				</div>
+
+			</div>
+
+			<div class="external_profiles">
+				<a class="alink"  href="https://scholar.google.co.in/citations?user=Xf2X1xIAAAAJ&hl=en" target="_blank"><img src="images/google_scholar.jpeg" class="logo"></a>
+				<a class="alink"  href="https://www.researchgate.net/profile/Mrinmoy-Bhattacharjee" target="_blank"><img src="images/researchgate.png" class="logo"></a>
+				<a class="alink"  href="https://www.linkedin.com/in/mrinmoy-bhattacharjee-77244b82/" target="_blank"><img src="images/linkedin.png" class="logo"></a>
+				<a class="alink"  href="https://github.com/mrinmoy-iitg" target="_blank"><img src="images/github.png" class="logo"></a>
+			</div>
+
 
 			<div class="intro_tile">
 				<div class="page_subheading">About me</div>
@@ -56,32 +73,11 @@
 			
 			</div>
 
-			<div class="profile_pic">
-				<p class="page_heading">Mrinmoy Bhattacharjee</p>
-				<img src="images/Profile_Pic_candid.jpg" style="position: relative; max-width: 100%;">
-				<div class="contact_details_tile">
-					<p>Mrinmoy Bhattacharjee</p>
-					<p>Dept. of Electronics and Electrical Engineering</p>
-					<p>Indian Institute of Technology Guwahati</p>
-					<p>Guwahati-781039, Assam, India</p>
-					<p>Email: mrinmoy[dot]bhattacharjee[at]iitg[dot]ac[dot]in</p>
-				</div>
-
-			</div>
 
 			<div class="highlight_text">
 			I have recently joined IIT Dharwad as a Senior Project Engineer in a project under the <a class="alink"  href="https://www.meity.gov.in/national-language-translation-mission" target="_blank">National Language Translation Mission</a> of MeitY, Govt. of India. The project aims to develop efficient speaker recognition tools for different Indian languages. I am developing an open-source python-based toolkit to build speaker recognition systems for Indian languages. Before joining the Ph.D. program, I worked as an Assistant Project Engineer in a DST, Govt. of India sponsored project titled "Online handwriting recognition for Assamese language" at IIT Guwahati.
 			</div>
 
-		</div>
-
-
-		<!-- Right Pane -->
-		<div class="flex_col external_profiles">
-			<a class="alink"  href="https://scholar.google.co.in/citations?user=Xf2X1xIAAAAJ&hl=en" target="_blank"><img src="images/google_scholar.jpeg" width="40px" class="logo"></a>
-			<a class="alink"  href="https://www.researchgate.net/profile/Mrinmoy-Bhattacharjee" target="_blank"><img src="images/researchgate.png" width="35px" class="logo"></a>
-			<a class="alink"  href="https://www.linkedin.com/in/mrinmoy-bhattacharjee-77244b82/" target="_blank"><img src="images/linkedin.png" width="40px" class="logo"></a>
-			<a class="alink"  href="https://github.com/mrinmoy-iitg" target="_blank"><img src="images/github.png" width="40px" class="logo"></a>
 		</div>
 
 
@@ -91,7 +87,9 @@
 				Mrinmoy Bhattacharjee<br/>Dept. of Electronics and Electrical Engineering<br/>Indian Institute of Technology Guwahati<br/>Guwahati-781039, Assam, India<br/>Email: mrinmoy[dot]bhattacharjee[at]iitg[dot]ac[dot]in
 			</div>
 			<div class="footer_text">
-			&#169; Copyright 2022 Mrinmoy Bhattacharjee. Hosted by &nbsp; <a href="https://pages.github.com/" target="_blank" class="no_link_deco">Github Pages</a>. Last updated: &nbsp; <b id="last_updated" class="no_link_deco"></b>
+			&#169; Copyright 2022 Mrinmoy Bhattacharjee. <br/> 
+			Hosted by &nbsp; <a href="https://pages.github.com/" target="_blank" class="no_link_deco">Github Pages</a>. <br/> 
+			Last updated: &nbsp; <b id="last_updated" class="no_link_deco"></b>
 			</div>
 		</div>
 		

@@ -4,8 +4,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=yes">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-		<!--<link rel="icon" type="image/x-icon" href="images/Initials.jpg">-->
-		<link rel="stylesheet" href="css/base_style.css">
+		<link rel="stylesheet" href="css/base_style_mobile.css">
 		<link rel="stylesheet" href="css/timeline.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kotta One">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Farsan">
@@ -16,10 +15,14 @@
 
 	<body lang="en-IN" onload="page_setup()">
 
-		<div class="menu_pane">
+		<div class="open_menu_pane" onclick="open_pane()">
+			&equiv;
+			<input type="hidden" value="closed" id="menu_status">
+		</div>
+
+		<div class="menu_pane" id="menu_pane">
 			<div class="menu_items empty_menu_item">
-				<p class="first_name">Mrinmoy</p> &nbsp;
-				<p class="last_name">Bhattacharjee</p>
+				<p class="first_name">Mrinmoy</p> &nbsp; <p class="last_name">Bhattacharjee</p>
 			</div>
 			<div class="menu_items hyperlink"  onclick="window.open('index.html', '_self');">
 				About
@@ -53,10 +56,6 @@
 
 			<!-- 2022 -->
 			<p class="page_subheading">2022
-<!--
-			<b onclick="document.getElementById('2022_content').style.display='block';">&nbsp;[+]</b></p>
-			<div class="year_wise_content" style="display: none;" id="2022_content">
--->
 			<div class="year_wise_content">
 				<div class="flex_col_group">
 					<div class="publication_record">
