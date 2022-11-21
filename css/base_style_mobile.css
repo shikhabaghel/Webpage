@@ -1,7 +1,7 @@
 /*
 For mobile screens
 */
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 1024px)
 {
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
 		margin: 0;
@@ -50,23 +50,29 @@ For mobile screens
 		width: 100%;
 		margin: auto;
 		text-align: left;
-		font-size: 40px;
+		font-size: 300%;
 		background-color: rgba(54, 56, 55, 1);
 		color: white;
 		padding: 0 0 0 5vw;
 	}
 	.menu_pane{
-		position: relative;
+		position: fixed;
 		width: 100%;
 		margin: auto;
 		background-color: white;
 		display: none;
+		z-index: 1;
+		background: rgba(54, 56, 55, 1);
+		opacity: 0.9;
+		color: white;
+		font-weight: 900;
 	}
 	.menu_items{
 		width: 80%;
 		margin: auto;
 		font-weight: 900;
 		padding: 3%;
+		z-index: 2;
 	}
 	.selected_menu{
 		background-color: rgba(80, 86, 250, 1);
@@ -79,12 +85,14 @@ For mobile screens
 		border-bottom: 5px solid transparent;
 	}
 	.first_name{
-		color: rgba(54, 56, 55, 1);
+		color: white;
+		font-size: 200%;
 		font-weight: 900;
 		display: inline;
 	}
 	.last_name{
-		color: gray;
+		font-size: 200%;
+		color: white;
 		display: inline;
 	}
 	.hyperlink{
@@ -131,6 +139,9 @@ For mobile screens
 		height: 3vh;
 		margin: auto;
 		text-align: center;
+		display: flex;
+		justify-content: space-around;
+		padding: 1%;
 	}
 	.page_heading{
 		font-family: "Farsan", sans-serif;
@@ -160,9 +171,11 @@ For mobile screens
 		font-weight: 500;
 		margin: 3%;
 		text-align: center;
+		font-size: 90%;
 	}
 	.logo{
 		max-height: 100%;
+		width: auto;
 	}
 	.logo:hover{
 		transform:scale(1.3,1.3);
@@ -190,6 +203,7 @@ For mobile screens
 		text-decoration: none;
 		color: white;
 		background-color: rgba(54, 56, 55, 1);
+		font-size: 90%;
 	}
 	.alink{
 		text-decoration: none;
@@ -219,14 +233,14 @@ For mobile screens
 /*
 For laptop screens
 */
-@media only screen and (min-width: 600px) and (max-width: 2048px)
+@media only screen and (min-width: 1024px) and (max-width: 2048px)
 {
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
 		margin: 0;
 		padding: 0;
 		border: 0;
 		outline: 0;
-		font-size: 18px;
+		font-size: 100%;
 		vertical-align: baseline;
 		background: transparent;
 	}
@@ -241,7 +255,6 @@ For laptop screens
 		min-height: 100vh;
 		text-align: justify;
 		font-family: "Calibri", sans-serif;
-		font-size: 18px;
 		color: rgba(35, 36, 35, 0.8);
 		background-color: white;
 	}
@@ -291,11 +304,10 @@ For laptop screens
 		width: 80%;
 		margin: auto;
 		padding-top: 1%;
-		height: 5vw;
+		height: 7%;
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
-		height: 10%;
 		background-color: white;
 		box-shadow: 0px 3px 5px 5px rgba(54, 56, 55, 0.1);
 		z-index: 1;
@@ -326,12 +338,12 @@ For laptop screens
 		border-bottom: 5px solid transparent;
 	}
 	.first_name{
-		font-size: 24px;
+		font-size: 150%;
 		color: rgba(54, 56, 55, 1);
 		font-weight: 900;
 	}
 	.last_name{
-		font-size: 24px;
+		font-size: 150%;
 		color: gray;
 	}
 	.hyperlink{
@@ -370,7 +382,7 @@ For laptop screens
 		width: 100%;
 		text-align: center;
 		font-weight: 900;
-		font-size: 14px;
+		font-size: 100%;
 		font-family: "Farsan", sans-serif;
 		margin: 0px 0px 20px 0px;
 	}
@@ -393,14 +405,14 @@ For laptop screens
 	}
 	.page_heading{
 		font-family: "Farsan", sans-serif;
-		font-size:40px;
+		font-size: 300%;
 		text-align: center;
 		margin: 10px 0px 10px 0px;
 	}
 	.page_subheading{
 		margin: 20px 0px 0px 0px;
 		font-family: "Farsan", sans-serif;
-		font-size: 26px;
+		font-size: 200%;
 		position: relative;
 		width: 100%;
 		text-align: left;
@@ -421,10 +433,11 @@ For laptop screens
 	}
 	.footer_text{
 		font-weight: 500;
-		font-size: 14px;
+		font-size: 90%;
 	}
 	.logo{
 		max-width: 100%;
+		height: auto;
 	}
 	.logo:hover{
 		transform:scale(1.3,1.3);
@@ -452,7 +465,7 @@ For laptop screens
 		text-decoration: none;
 		color: white;
 		background-color: rgba(54, 56, 55, 1);
-		font-size: 14px;
+		font-size: 90%;
 	}
 	.alink{
 		text-decoration: none;
@@ -462,19 +475,19 @@ For laptop screens
 		text-decoration: none;
 		color: blue;
 		font-weight: 900;
-		font-size: 14px;
+		font-size: 90%;
 	}
 	.pdf_button{
 		text-decoration: none;
 		color: rgb(227, 5, 68);
 		font-weight: 900;
-		font-size: 14px;
+		font-size: 90%;
 	}
 	.html_button{
 		text-decoration: none;
 		color: rgb(94, 158, 74);
 		font-weight: 900;
-		font-size: 14px;
+		font-size: 90%;
 	}
 	.open_menu_pane{
 		display: none;
