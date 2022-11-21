@@ -1,46 +1,109 @@
-.teaching_exp{
-	position: relative;
-	width: 100%;
-	margin: auto;
-	display: block-inline;
-	border-radius: 5px;
-	padding: 10px;
+/*
+For laptop screens
+*/
+@media only screen and (min-width: 1024px) and (max-width: 2048px)
+{
+	.teaching_exp{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		display: block-inline;
+		border-radius: 5px;
+		padding: 10px;
+	}
+	.work_exp{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		display: none;
+		border-radius: 5px;
+		padding: 10px;
+	}
+	.talks{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		display: none;
+		border-radius: 5px;
+		padding: 10px;
+	}
+	.false_button_div{
+		position: relative;
+		width: 100%;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		box-shadow: 0px 3px 3px 3px rgba(35, 36, 35, 0.1);
+	}
+	.false_button{
+		position: relative;
+		display: inline-block;
+		border-radius: 5px;
+		padding: 15px;
+		text-align: center;
+		font-weight: 900;
+	}
+	#teaching_exp_false_button{
+		background-color: rgba(72, 156, 94, 1);
+		color: white;
+	}
+	.mobile_heading{
+		display: none;
+	}
 }
-.work_exp{
-	position: relative;
-	width: 100%;
-	margin: auto;
-	display: none;
-	border-radius: 5px;
-	padding: 10px;
+
+
+/*
+For mobile screens
+*/
+@media only screen and (max-width: 1024px)
+{
+	.teaching_exp{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		display: block-inline;
+		border-radius: 5px;
+		padding: 2%;
+	}
+	.work_exp{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		border-radius: 5px;
+	}
+	.talks{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		border-radius: 5px;
+	}
+	.false_button_div{
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		margin-bottom: 5%;
+		display: none;
+	}
+	.false_button{
+		position: relative;
+		display: inline-block;
+		border-radius: 5px;
+		text-align: center;
+		font-weight: 900;
+		padding: 3%;
+	}
+	#teaching_exp_false_button{
+		background-color: rgba(72, 156, 94, 1);
+		color: white;
+	}
+	.mobile_heading{
+		display: block;
+	}
 }
-.talks{
-	position: relative;
-	width: 100%;
-	margin: auto;
-	display: none;
-	border-radius: 5px;
-	padding: 10px;
-}
-.false_button_div{
-	position: relative;
-	width: 100%;
-	margin-bottom: 20px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
-	box-shadow: 0px 3px 3px 3px rgba(35, 36, 35, 0.1);
-}
-.false_button{
-	position: relative;
-	display: block-inline;
-	border-radius: 5px;
-	padding: 15px;
-	text-align: center;
-	font-weight: 900;
-}
-#teaching_exp_false_button{
-	background-color: rgba(72, 156, 94, 1);
-	color: white;
-}
+
