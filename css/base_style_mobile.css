@@ -1,7 +1,7 @@
 /*
 For mobile screens
 */
-@media only screen and (max-width: 1024px)
+@media only screen and (max-width: 720px)
 {
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
 		margin: 0;
@@ -243,7 +243,7 @@ For mobile screens
 /*
 For laptop screens
 */
-@media only screen and (min-width: 1024px) and (max-width: 2048px)
+@media only screen and (min-width: 720px)
 {
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
 		margin: 0;
