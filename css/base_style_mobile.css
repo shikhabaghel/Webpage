@@ -10,24 +10,25 @@ For mobile screens
 		outline: 0;
 		vertical-align: baseline;
 		background: transparent;
-		font-size: 4vw;
+		font-size: 3vw;
 	}
 	body {
 		position: relative;
-		width: 100vw;
+		width: 100%;
 		margin: auto;
 		min-height: 100vh;
 		text-align: justify;
-		font-family: "Calibri", sans-serif;
-		color: rgba(35, 36, 35, 0.8);
+		font-family: "Josefin Sans", sans-serif;
+		color: rgba(35, 36, 35, 1);
 		background-color: white;
+		filter: brightness(100%);
 	}
 	div {
 		word-wrap: break-word;
 	}
 	table{
 		position: relative;
-		width: 100vw;
+		width: 100%;
 		border-collapse: collapse;
 		font-size: 4vw;
 	}
@@ -46,43 +47,57 @@ For mobile screens
 	}
 	.empty_div{
 		position: relative;
-		width: 70vw;
+		width: 70%;
 	}
 	.open_menu_pane{
 		position: relative;
-		width: 100vw;
-		margin: auto;
-		text-align: left;
-		font-size: 6vw;
-		background-color: rgba(54, 56, 55, 1);
-		color: white;
-		padding: 0 0 0 5vw;
+		width: 100%;
+		text-align: right;
+		font-size: 10vw;
+		font-weight: 900;
+		background-color: transparent;
+		color: rgba(15, 38, 92, 1);
+		z-index: 2;
 	}
 	.mobile_nameplate{
 		font-size: 5vw;
 	}
 	.menu_pane{
 		position: fixed;
-		width: 100vw;
-		margin: auto;
-		background-color: white;
+		top: 0;
+		left: 0;
+		width: 80vw;
+		height: 100%;
 		display: none;
 		z-index: 1;
-		background: rgba(54, 56, 55, 1);
-		opacity: 0.9;
+		background-color: black; /* rgba(54, 56, 55, 1);*/
+		opacity: 1;
 		color: white;
 		font-weight: 900;
+		text-align: center;
 	}
 	.menu_items{
-		width: 80%;
+		position: relative;
+		width: 60%;
 		margin: auto;
-		font-weight: 900;
-		padding: 3%;
-		z-index: 2;
+		font-weight: 500;
+		padding: 1% 5% 1% 0;
+		z-index: 1;
+		text-align: left;
+	}
+	.menu_profile_pic{
+		position: relative;
+		width: 30%;
+		margin: auto;
+		padding-top: 20%;
+	}
+	.menu_text{
+		position: relative; 
+		width: 100%;
+		font-size: 5vw; 
+		font-size: 900;
 	}
 	.selected_menu{
-		background-color: rgba(80, 86, 250, 1);
-		color: white;
 	}
 	.empty_menu_item{
 		margin: 0px 10px 0px 0px;
@@ -111,31 +126,33 @@ For mobile screens
 	.dashboard{
 		position: relative;
 		width: 90%;
-		margin: auto;
+		margin: auto auto 10% auto;
 		min-height: 100%;
-		padding: 2%;
 	}
 	.intro_tile{
 		position: relative;
-		width: 100%; 
+		max-width: 90%;
 		margin: auto;
 		text-align: justify;
 	}
 	.profile_pic{
 		position: relative;
-		max-width: 100%;
+		max-width: 90%;
 		margin: auto;
 		text-align: center;
 	}
 	.contact_details_tile{
 		position: relative;
-		width: 100%;
+		max-width: 90%;
 		margin: auto;
 		text-align: center;
-		font-weight: 900;
-		font-family: "Farsan", sans-serif;
+		font-weight: 500;
+		/*font-family: "Farsan", sans-serif;*/
 	}
 	.highlight_text{
+		position: relative;
+		max-width: 90%;
+		margin: auto;
 		border: 3px dashed rgba(54, 56, 55, 0.6);
 		border-radius: 10px;
 		background-color: rgba(33, 191, 115, 0.5);
@@ -151,35 +168,48 @@ For mobile screens
 		padding: 1%;
 	}
 	.page_heading{
+		position: relative;
+		width: 100%;
+		margin: auto;
 		font-family: "Farsan", sans-serif;
 		text-align: center;
-		margin: 10% 0px 10% 0px;
 		font-size: 7vw;
+		margin: 5% 0 3% 0;
+		font-weight: 900;
+		color: rgba(80, 86, 250, 1);
 	}
 	.page_subheading{
 		position: relative;
 		width: 100%;
-		margin: 20px 0px 0px 0px;
-		font-family: "Farsan", sans-serif;
+		margin: auto;
+		/*font-family: "Farsan", sans-serif;*/
 		text-align: left;
-		margin: 5% 0px 5% 0px;
-		background-color: rgba(54, 56, 55, 0.1);
-		font-size: 6vw;
-		padding: 3%;
+		background-color: transparent; /* rgba(54, 56, 55, 0.1);*/
+		font-size: 5vw;
+		margin: 5% 0 3% 0;
+		font-weight: 900;
+		color: rgba(80, 86, 250, 1);
 	}
 	.footer{
 		position: relative;
-		width: 95%;
+		width: 100%;
 		margin: auto;
-		background-color: rgba(54, 56, 55, 1);
+		background-color: black; /* rgba(15, 38, 92, 1);*/
 		color: gray;
 		padding: 5%;
 	}
 	.footer_text{
-		font-weight: 500;
+		font-weight: 300;
 		margin: 3%;
 		text-align: center;
-		font-size: 3.5vw;
+		font-size: 3vw;
+	}
+	.no_link_deco{
+		text-decoration: none;
+		background-color: black; /* rgba(15, 38, 92, 1);*/
+		color: gray;
+		font-size: 3vw;
+		font-weight: 300;
 	}
 	.logo{
 		position: relative;
@@ -203,20 +233,10 @@ For mobile screens
 	.right_col{
 		width: 80%;
 	}
-	.blue_background{
-		background-color: rgba(40, 40, 117, 1);
-		color: white;
-		font-weight: 900;
-	}
-	.no_link_deco{
-		text-decoration: none;
-		color: white;
-		background-color: rgba(54, 56, 55, 1);
-		font-size: 3.5vw;
-	}
 	.alink{
 		text-decoration: none;
 		color: rgba(207, 62, 110, 1);
+		font-weight: 700;
 	}
 	.abstract_button{
 		text-decoration: none;
@@ -237,6 +257,20 @@ For mobile screens
 		position: relative;
 		max-width: 100%;
 	}
+	.mobile_view{
+		display: inline;
+	}
+	.ext_profiles_menu{
+		position: relative;
+		width: 70%;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.laptop_view{
+		display: none;
+	}
 }
 
 
@@ -250,7 +284,7 @@ For laptop screens
 		padding: 0;
 		border: 0;
 		outline: 0;
-		font-size: 1.2vw;
+		font-size: 1.5vw;
 		vertical-align: baseline;
 		background: transparent;
 	}
@@ -376,15 +410,15 @@ For laptop screens
 		align-items: start;
 		justify-content: space-around;
 	}
-	.intro_tile{space-around
+	.intro_tile{
 		position: relative;
-		width: 55%; 
+		width: 50%; 
 		text-align: justify;
 		padding: 10px;
 	}
 	.profile_pic{
 		position: relative;
-		max-width: 40%;
+		max-width: 45%;
 		text-align: center;
 	}
 	.contact_details_tile{
@@ -393,7 +427,7 @@ For laptop screens
 		text-align: center;
 		font-weight: 900;
 		font-size: 1.2vw;
-		font-family: "Farsan", sans-serif;
+		/*font-family: "Farsan", sans-serif;*/
 		margin: 0px 0px 20px 0px;
 	}
 	.highlight_text{
@@ -414,7 +448,7 @@ For laptop screens
 		justify-content: space-around;
 	}
 	.page_heading{
-		font-family: "Farsan", sans-serif;
+		/*font-family: "Farsan", sans-serif;*/
 		font-size: 2.5vw;
 		text-align: center;
 		margin: 10px 0px 10px 0px;
@@ -423,7 +457,7 @@ For laptop screens
 		position: relative;
 		width: 100%;
 		margin: 20px 0px 0px 0px;
-		font-family: "Farsan", sans-serif;
+		/*font-family: "Farsan", sans-serif;*/
 		font-size: 2vw;
 		text-align: left;
 		padding: 5px 0 5px 0;
@@ -438,11 +472,17 @@ For laptop screens
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-around;
-		background-color: rgba(54, 56, 55, 1);
+		background-color: black; /* rgba(54, 56, 55, 1);*/
 		color: gray;
 	}
 	.footer_text{
 		font-weight: 500;
+		font-size: 1vw;
+	}
+	.no_link_deco{
+		text-decoration: none;
+		background-color: black; /* rgba(54, 56, 55, 1);*/
+		color: gray;
 		font-size: 1vw;
 	}
 	.logo{
@@ -466,17 +506,6 @@ For laptop screens
 	}
 	.right_col{
 		width: 80%;
-	}
-	.blue_background{
-		background-color: rgba(40, 40, 117, 1);
-		color: white;
-		font-weight: 900;
-	}
-	.no_link_deco{
-		text-decoration: none;
-		color: white;
-		background-color: rgba(54, 56, 55, 1);
-		font-size: 1vw;
 	}
 	.alink{
 		text-decoration: none;
@@ -505,6 +534,19 @@ For laptop screens
 	}
 	.research_word_cloud{
 		max-width: 50%;
+	}
+	.mobile_view{
+		display: none;
+	}
+	.ext_profiles_menu{
+		position: relative;
+		width: 70%;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.laptop_view{
 	}
 }
 

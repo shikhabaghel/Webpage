@@ -15,41 +15,59 @@
 
 	<body lang="en-IN" onload="page_setup()">
 
-		<div class="open_menu_pane" onclick="open_pane()">
+		<div class="open_menu_pane mobile_view" onclick="open_pane()">
 			&equiv;
-			&nbsp;
-			<span class="mobile_nameplate">Mrinmoy Bhattacharjee</span>
 			<input type="hidden" value="closed" id="menu_status">
 		</div>
 
 		<div class="menu_pane" id="menu_pane">
-			<div class="menu_items empty_menu_item">
-				<p class="first_name">Mrinmoy</p> &nbsp; <p class="last_name">Bhattacharjee</p>
+			<div class="mobile_view">
+				<div class="menu_profile_pic">
+					<img src="images/Profile_Pic_formal.jpg" style="position: relative; max-width: 100%; border: 10px solid rgba(35, 36, 35, 1); border-radius: 100%;">
+				</div>
+				<p class="menu_text">Mrinmoy Bhattacharjee</p>
+				<p class="menu_text">Senior Project Engineer @ IIT Dharwad</p>
+				<br/><br/>
 			</div>
+
+			<div class="mobile_view">
+				<div class="ext_profiles_menu">
+					<a class="alink"  href="https://scholar.google.co.in/citations?user=Xf2X1xIAAAAJ&hl=en" target="_blank"><img src="images/google_scholar_bw.png" width="25px"></a>
+					<a class="alink"  href="https://www.researchgate.net/profile/Mrinmoy-Bhattacharjee" target="_blank"><img src="images/researchgate_bw.png" width="20px"></a>
+					<a class="alink"  href="https://www.linkedin.com/in/mrinmoy-bhattacharjee-77244b82/" target="_blank"><img src="images/linkedin_bw.png" width="25px"></a>
+					<a class="alink"  href="https://github.com/mrinmoy-iitg" target="_blank"><img src="images/github_bw.png" width="25px"></a>
+				</div>
+				<br/>
+				<hr style="color: white;">
+				<br/>
+			</div>
+
 			<div class="menu_items hyperlink"  onclick="window.open('index.html', '_self');">
-				About
+				<div class="mobile_view"><img src="images/home.png" width="25px"> &nbsp; &nbsp;</div> About
 			</div>
 			&emsp;
 			<div class="menu_items hyperlink" onclick="window.open('education.html', '_self');">
-				Skills
+				<div class="mobile_view"><img src="images/skills.png" width="25px"> &nbsp; &nbsp;</div> Skills
 			</div>
 			&emsp;
 			<div class="menu_items hyperlink" onclick="window.open('research.html', '_self');">
-				Research
+				<div class="mobile_view"><img src="images/research.png" width="25px"> &nbsp; &nbsp;</div> Research
 			</div>
 			&emsp;
 			<div class="menu_items hyperlink" onclick="window.open('publications.html', '_self');">
-				Publications
+				<div class="mobile_view"><img src="images/publications.png" width="25px"> &nbsp; &nbsp;</div> Publications
 			</div>
 			&emsp;
 			<div class="menu_items hyperlink" onclick="window.open('experience.html', '_self');">
-				Experience
+				<div class="mobile_view"><img src="images/experience.png" width="25px"> &nbsp; &nbsp;</div> Experience
 			</div>
 			&emsp;
 			<div class="menu_items selected_menu">
-				Highlights
+				<div class="mobile_view"><img src="images/highlights.png" width="25px"> &nbsp; &nbsp;</div> Highlights
 			</div>
 		</div>
+
+
 
 		<div class="dashboard">
 
@@ -106,7 +124,7 @@
 
 
 		<!-- Right Pane -->
-		<div class="flex_col external_profiles">
+		<div class="flex_col external_profiles laptop_view">
 			<a href="https://scholar.google.co.in/citations?user=Xf2X1xIAAAAJ&hl=en" target="_blank"><img src="images/google_scholar.jpeg" width="40px" class="logo"></a>
 			<a href="https://www.researchgate.net/profile/Mrinmoy-Bhattacharjee" target="_blank"><img src="images/researchgate.png" width="35px" class="logo"></a>
 			<a href="https://www.linkedin.com/in/mrinmoy-bhattacharjee-77244b82/" target="_blank"><img src="images/linkedin.png" width="40px" class="logo"></a>
@@ -120,8 +138,19 @@
 			<div class="footer_text">
 				Mrinmoy Bhattacharjee<br/>Dept. of Electronics and Electrical Engineering<br/>Indian Institute of Technology Guwahati<br/>Guwahati-781039, Assam, India<br/>Email: mrinmoy[dot]bhattacharjee[at]iitg[dot]ac[dot]in
 			</div>
-			<div class="footer_text">
-			&#169; Copyright 2022 Mrinmoy Bhattacharjee. Hosted by &nbsp; <a href="https://pages.github.com/" target="_blank" class="no_link_deco">Github Pages</a>. Last updated: &nbsp; <b id="last_updated" class="no_link_deco"></b>
+			<div>
+				<div class="footer_text">
+				&#169; Copyright 2022 Mrinmoy Bhattacharjee. <br/> 
+				Hosted by &nbsp; <a href="https://pages.github.com/" target="_blank" class="no_link_deco">Github Pages</a>. <br/> 
+				Last updated: &nbsp; <b id="last_updated" class="no_link_deco"></b>
+				</div>
+				<br/>
+				<div class="ext_profiles_menu">
+					<a class="alink"  href="https://scholar.google.co.in/citations?user=Xf2X1xIAAAAJ&hl=en" target="_blank"><img src="images/google_scholar_bw.png" width="25px"></a>
+					<a class="alink"  href="https://www.researchgate.net/profile/Mrinmoy-Bhattacharjee" target="_blank"><img src="images/researchgate_bw.png" width="20px"></a>
+					<a class="alink"  href="https://www.linkedin.com/in/mrinmoy-bhattacharjee-77244b82/" target="_blank"><img src="images/linkedin_bw.png" width="25px"></a>
+					<a class="alink"  href="https://github.com/mrinmoy-iitg" target="_blank"><img src="images/github_bw.png" width="25px"></a>
+				</div>
 			</div>
 		</div>
 		

@@ -90,10 +90,14 @@ function open_pane(){
 	if (document.getElementById("menu_status").value=="closed"){
 		document.getElementById("menu_pane").style.display = "block";
 		document.getElementById("menu_status").value = "open";
+		document.getElementsByTagName("body")[0].style.overflow = "hidden"
+		document.getElementsByClassName('open_menu_pane')[0].style.color = "white";
 	}
 	else if (document.getElementById("menu_status").value=="open"){
 		document.getElementById("menu_pane").style.display = "none";
 		document.getElementById("menu_status").value = "closed";
+		document.getElementsByTagName("body")[0].style.overflow = "scroll"
+		document.getElementsByClassName('open_menu_pane')[0].style.color = "rgba(15, 38, 92, 1)";
 	}
 }
 
