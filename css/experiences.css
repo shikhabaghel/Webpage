@@ -49,9 +49,6 @@ For laptop screens
 		background-color: rgba(72, 156, 94, 1);
 		color: white;
 	}
-	.mobile_heading{
-		display: none;
-	}
 }
 
 
@@ -101,9 +98,6 @@ For mobile screens
 	#teaching_exp_false_button{
 		background-color: rgba(72, 156, 94, 1);
 		color: white;
-	}
-	.mobile_heading{
-		display: block;
 	}
 }
 

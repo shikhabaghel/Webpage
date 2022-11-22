@@ -30,12 +30,10 @@ For mobile screens
 		position: relative;
 		width: 100%;
 		border-collapse: collapse;
-		font-size: 4vw;
 	}
 	th,td {
 		padding: 5px;
 		text-align: left;
-		font-size: 4vw;
 	}
 	li{
 		padding: 5px;
