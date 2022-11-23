@@ -35,6 +35,9 @@ For mobile screens
 		padding: 5px;
 		text-align: left;
 	}
+	th{
+		color: blue;
+	}
 	li{
 		padding: 5px;
 	}
@@ -136,6 +139,12 @@ For mobile screens
 		max-width: 90%;
 		margin: auto;
 		text-align: justify;
+	}
+	.thesis_tile{
+		position: relative;
+		max-width: 90%;
+		text-align: justify;
+		padding: 10px;
 	}
 	.profile_pic{
 		position: relative;
@@ -414,13 +423,19 @@ For laptop screens
 	}
 	.intro_tile{
 		position: relative;
-		width: 50%; 
+		width: 45%; 
+		text-align: justify;
+		padding: 10px;
+	}
+	.thesis_tile{
+		position: relative;
+		min-width: 45%; 
 		text-align: justify;
 		padding: 10px;
 	}
 	.profile_pic{
 		position: relative;
-		max-width: 45%;
+		max-width: 50%;
 		text-align: center;
 	}
 	.contact_details_tile{

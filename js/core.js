@@ -92,12 +92,16 @@ function open_pane(){
 		document.getElementById("menu_status").value = "open";
 		document.getElementsByTagName("body")[0].style.overflow = "hidden"
 		document.getElementsByClassName('open_menu_pane')[0].style.color = "white";
+		document.getElementById("menu_closed_icon").style.display = "none";
+		document.getElementById("menu_open_icon").style.display = "inline";
 	}
 	else if (document.getElementById("menu_status").value=="open"){
 		document.getElementById("menu_pane").style.display = "none";
 		document.getElementById("menu_status").value = "closed";
 		document.getElementsByTagName("body")[0].style.overflow = "scroll"
 		document.getElementsByClassName('open_menu_pane')[0].style.color = "rgba(15, 38, 92, 1)";
+		document.getElementById("menu_closed_icon").style.display = "inline";
+		document.getElementById("menu_open_icon").style.display = "none";
 	}
 }
 

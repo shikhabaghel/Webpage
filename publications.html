@@ -16,20 +16,24 @@
 	<body lang="en-IN" onload="page_setup()">
 
 		<div class="open_menu_pane mobile_view" onclick="open_pane()">
-			&equiv;
+			<!-- &equiv; -->
+			<img src="images/menu_closed.png" width="25px" id="menu_closed_icon" style="display: inline;">
+			<img src="images/menu_open.png" width="25px" id="menu_open_icon" style="display: none;">
 			<input type="hidden" value="closed" id="menu_status">
 		</div>
 
 		<div class="menu_pane" id="menu_pane">
+
+			<!-- Mobile Menu -->
 			<div class="mobile_view">
 				<div class="menu_profile_pic">
 					<img src="images/Profile_Pic_formal.jpg" style="position: relative; max-width: 100%; border: 10px solid rgba(35, 36, 35, 1); border-radius: 100%;">
 				</div>
 				<p class="menu_text">Mrinmoy Bhattacharjee</p>
 				<p class="menu_text">Senior Project Engineer @ IIT Dharwad</p>
-				<br/><br/>
+				<br/>
 			</div>
-
+			
 			<div class="mobile_view">
 				<div class="ext_profiles_menu">
 					<a class="alink"  href="https://scholar.google.co.in/citations?user=Xf2X1xIAAAAJ&hl=en" target="_blank"><img src="images/google_scholar_bw.png" width="25px"></a>
@@ -38,9 +42,9 @@
 					<a class="alink"  href="https://github.com/mrinmoy-iitg" target="_blank"><img src="images/github_bw.png" width="25px"></a>
 				</div>
 				<br/>
-				<hr style="color: white;">
-				<br/>
+				<hr style="color: white; position: relative; width: 80%;">
 			</div>
+			<!-- ------------------------------- -->
 
 			<div class="laptop_view">
 				<div class="empty_menu_item flex_row">
