@@ -456,7 +456,7 @@ For laptop screens
 	.external_profiles{
 		position: fixed;
 		top: 20%;
-		right: 1%;
+		right: 5%;
 		width: 3%;
 		height: 50%;
 		display: flex;
