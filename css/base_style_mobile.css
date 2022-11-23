@@ -10,7 +10,7 @@ For mobile screens
 		outline: 0;
 		vertical-align: baseline;
 		background: transparent;
-		font-size: 3vw;
+		font-size: 4vw;
 	}
 	body {
 		position: relative;
@@ -42,6 +42,9 @@ For mobile screens
 		content:"";
 		display:table;
 		clear:both;
+	}
+	b{
+		color: blue;
 	}
 	.empty_div{
 		position: relative;
@@ -96,6 +99,7 @@ For mobile screens
 		font-size: 900;
 	}
 	.selected_menu{
+		display: none;
 	}
 	.empty_menu_item{
 		margin: 0px 10px 0px 0px;
@@ -186,7 +190,7 @@ For mobile screens
 		font-size: 5vw;
 		margin: 5% 0 3% 0;
 		font-weight: 900;
-		color: rgba(80, 86, 250, 1);
+		color: rgb(24, 181, 47); /* rgba(80, 86, 250, 1);*/
 	}
 	.footer{
 		position: relative;
