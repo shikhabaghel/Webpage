@@ -1,0 +1,123 @@
+.skills_tile{
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.2vw;
+}
+.skill_grade{
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.label{
+	position: relative;
+	width: 25%;
+	font-size: 1.2vw;
+	text-align: center;
+}
+.container {
+	position: relative;
+	width: 70%;
+	background-color: #acadad;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px 3px #ddd;
+	margin-bottom: 2%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.skill_bar{
+	text-align: right;
+	color: white;
+	font-size: 1.2vw;
+	padding: 0 2% 0 0;
+	border-radius: 5px;
+	display: inline-block;
+	font-weight: 900;
+}
+.hundred{
+	position: relative;
+	width: 100%;
+	background-color: #3d657a;
+}
+.hundred:after{
+	content: '100%';
+}
+.ninety{
+	position: relative;
+	width: 90%;
+	background-color: #2196F3;
+}
+.ninety:after{
+	content: '90%';
+}
+.eighty{
+	position: relative;
+	width: 80%;
+	background-color: #c2294a;
+}
+.eighty:after{
+	content: '80%';
+}
+.seventy{
+	position: relative;
+	width: 70%;
+	background-color: #04AA6D;
+}
+.seventy:after{
+	content: '70%';
+}
+.sixty{
+	position: relative;
+	width: 60%;
+	background-color: #5f3e82;
+}
+.sixty:after{
+	content: '60%';
+}
+.fifty{
+	position: relative;
+	width: 50%;
+	background-color: #994994;
+}
+.fifty:after{
+	content: '50%';
+}
+.forty{
+	position: relative;
+	width: 40%;
+	background-color: #3b542d;
+}
+.forty:after{
+	content: '40%';
+}
+.thirty{
+	position: relative;
+	width: 30%;
+	background-color: #877d0b;
+}
+.thirty:after{
+	content: '30%';
+}
+.twenty{
+	position: relative;
+	width: 20%;
+	background-color: #963b20;
+}
+.twenty:after{
+	content: '20%';
+}
+.ten{
+	position: relative;
+	width: 10%;
+	background-color: #ab3566;
+}
+.ten:after{
+	content: '10%';
+}
+

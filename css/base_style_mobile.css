@@ -384,10 +384,12 @@ For laptop screens
 		font-weight: 900;
 		color: white;
 		border-radius: 3px;
+		border-bottom: 5px solid transparent;
 	}
 	.empty_menu_item{
 		margin: 0px 10px 0px 0px;
 		border-right: 1px solid rgba(54, 56, 55, 1);
+		border-bottom: 5px solid transparent;
 	}
 	.empty_menu_item:hover{
 		border-bottom: 5px solid transparent;
@@ -465,7 +467,6 @@ For laptop screens
 		justify-content: space-around;
 	}
 	.page_heading{
-		/*font-family: "Farsan", sans-serif;*/
 		font-size: 2.5vw;
 		text-align: center;
 		margin: 10px 0px 10px 0px;
@@ -474,7 +475,6 @@ For laptop screens
 		position: relative;
 		width: 100%;
 		margin: 20px 0px 0px 0px;
-		/*font-family: "Farsan", sans-serif;*/
 		font-size: 2vw;
 		text-align: left;
 		padding: 5px 0 5px 0;
