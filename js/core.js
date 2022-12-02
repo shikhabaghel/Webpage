@@ -7,6 +7,17 @@ function page_setup(){
 }
 
 function show_abstract(id){
+	var abstracts = document.getElementsByClassName('abstract_div');
+	for (const abs_i of abstracts) {
+		abs_i.style.display = "none";
+		if (id.split('_')[2] != abs_i.id){
+			var idx = 'abstract_launcher_'.concat(abs_i.id);
+			var elem = document.getElementById(idx);
+			if (elem.innerText=="[-Abs]"){
+				elem.innerText = "[+Abs]";
+			}
+		}
+	}
 	var button_text = document.getElementById(id).innerText;
 	if(button_text == "[+Abs]"){
 		document.getElementById(id).innerText = "[-Abs]";
