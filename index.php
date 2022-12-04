@@ -138,14 +138,18 @@
 					<a class="alink"  href="https://github.com/mrinmoy-iitg" target="_blank"><img src="images/github_bw.png" width="25px"></a>
 				</div>
 			</div>
+
+			<p>File content:
+			<?php
+			$fh = fopen('visit_count.txt','r');
+			while ($line = fgets($fh)) {
+				echo($line);
+			}
+			fclose($fh);
+			?>
+			</p>
+
 		</div>
 		
 	</body>
-
-<?php
-$file = fopen("lidn.txt","a");
-
-
-fclose($file);
-?>
 </html>
