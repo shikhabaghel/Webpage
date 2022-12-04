@@ -34,7 +34,10 @@ function focus_segment_experiences(id){
 		document.getElementById("teaching_exp").style.display = "block";
 		document.getElementById("work_exp").style.display = "none";
 		document.getElementById("talks").style.display = "none";
-
+		document.getElementById("teaching_exp_false_button").className = "false_button selected_false_button hyperlink";
+		document.getElementById("work_exp_false_button").className = "false_button hyperlink";
+		document.getElementById("talks_false_button").className = "false_button hyperlink";
+/*
 		document.getElementById("teaching_exp_false_button").style.backgroundColor = "rgba(72, 156, 94, 1)";
 		document.getElementById("teaching_exp_false_button").style.color = "white";
 
@@ -43,12 +46,16 @@ function focus_segment_experiences(id){
 
 		document.getElementById("talks_false_button").style.backgroundColor = "white";
 		document.getElementById("talks_false_button").style.color = "rgba(35, 36, 35, 0.8)";
+*/
 	}
 	else if(id=="work_exp"){
 		document.getElementById("teaching_exp").style.display = "none";
 		document.getElementById("work_exp").style.display = "block";
 		document.getElementById("talks").style.display = "none";
-
+		document.getElementById("teaching_exp_false_button").className = "false_button hyperlink";
+		document.getElementById("work_exp_false_button").className = "false_button selected_false_button hyperlink";
+		document.getElementById("talks_false_button").className = "false_button hyperlink";
+/*
 		document.getElementById("teaching_exp_false_button").style.backgroundColor = "white";
 		document.getElementById("teaching_exp_false_button").style.color = "rgba(35, 36, 35, 0.8)";
 
@@ -57,12 +64,16 @@ function focus_segment_experiences(id){
 
 		document.getElementById("talks_false_button").style.backgroundColor = "white";
 		document.getElementById("talks_false_button").style.color = "rgba(35, 36, 35, 0.8)";
+*/
 	}
 	else if(id=="talks"){
 		document.getElementById("teaching_exp").style.display = "none";
 		document.getElementById("work_exp").style.display = "none";
 		document.getElementById("talks").style.display = "block";
-
+		document.getElementById("teaching_exp_false_button").className = "false_button hyperlink";
+		document.getElementById("work_exp_false_button").className = "false_button hyperlink";
+		document.getElementById("talks_false_button").className = "false_button selected_false_button hyperlink";
+/*
 		document.getElementById("teaching_exp_false_button").style.backgroundColor = "white";
 		document.getElementById("teaching_exp_false_button").style.color = "rgba(35, 36, 35, 0.8)";
 
@@ -71,6 +82,7 @@ function focus_segment_experiences(id){
 
 		document.getElementById("talks_false_button").style.backgroundColor = "rgba(72, 156, 94, 1)";
 		document.getElementById("talks_false_button").style.color = "white";
+*/
 	}
 }
 

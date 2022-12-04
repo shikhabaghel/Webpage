@@ -45,7 +45,14 @@ For laptop screens
 		text-align: center;
 		font-weight: 900;
 	}
-	#teaching_exp_false_button{
+	.false_button:hover{
+		background-color: rgba(72, 156, 94, 0.1);
+	}
+	.selected_false_button{
+		background-color: rgba(72, 156, 94, 1);
+		color: white;
+	}
+	.selected_false_button:hover{
 		background-color: rgba(72, 156, 94, 1);
 		color: white;
 	}
@@ -95,7 +102,14 @@ For mobile screens
 		font-weight: 900;
 		padding: 3%;
 	}
-	#teaching_exp_false_button{
+	.false_button:hover{
+		background-color: rgba(72, 156, 94, 0.1);
+	}
+	.selected_false_button{
+		background-color: rgba(72, 156, 94, 1);
+		color: white;
+	}
+	.selected_false_button:hover{
 		background-color: rgba(72, 156, 94, 1);
 		color: white;
 	}
