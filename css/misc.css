@@ -6,7 +6,7 @@ For laptop screens
 	.awards{
 		position: relative;
 		width: 100%;
-		display: block;
+		display: none;
 		border-radius: 5px;
 		padding: 10px;
 	}
@@ -14,6 +14,13 @@ For laptop screens
 		position: relative;
 		width: 100%;
 		display: none;
+		border-radius: 5px;
+		padding: 10px;
+	}
+	.volunteering{
+		position: relative;
+		width: 100%;
+		display: block;
 		border-radius: 5px;
 		padding: 10px;
 	}
@@ -29,18 +36,56 @@ For laptop screens
 	.false_button{
 		display: block;
 		border-radius: 5px;
-		padding: 15px;
+		padding: 10px 0px 5px 0px;
 		text-align: center;
 		position: relative;
 		width: 30%;
 		font-weight: 900;
 	}
-	#awards_false_button{
+	.false_button:hover{
+		background-color: rgba(72, 156, 94, 0.1);
+	}
+	.selected_false_button{
+		background-color: rgba(72, 156, 94, 1);
+		color: white;
+	}
+	.selected_false_button:hover{
 		background-color: rgba(72, 156, 94, 1);
 		color: white;
 	}
 	.mobile_heading{
 		display: none;
+	}
+	.proceeding_group{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		padding: 10px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.proceeding{
+		border: 1px solid rgba(80, 86, 250, 0.5);
+		border-radius: 5px;
+		padding: 10px;
+		margin: 1%;
+		text-align: center;
+		display: inline;
+		width: 25%;
+		height: 5%;
+		word-wrap: break-word;
+		border-radius: 10px;
+		box-shadow: 1px 1px 3px 1px rgba(216, 235, 240, 1);
+		background-color: rgba(216, 235, 240, 1);
+		color: rgba(80, 86, 250, 1);
+		text-align: center;
+	}
+	.proceeding:hover{
+		box-shadow: 3px 3px 5px 3px gray;
+		font-weight: 900;
+		color: white;
+		background-color: rgba(80, 86, 250, 1);
 	}
 }
 
@@ -61,6 +106,12 @@ For mobile screens
 		border-radius: 5px;
 		padding: 2%;
 	}
+	.volunteering{
+		position: relative;
+		width: 100%;
+		border-radius: 5px;
+		padding: 10px;
+	}
 	.false_button_div{
 		margin-bottom: 20px;
 		display: flex;
@@ -80,11 +131,22 @@ For mobile screens
 		width: 20%;
 		font-weight: 900;
 	}
-	#awards_false_button{
-		background-color: rgba(72, 156, 94, 1);
-		color: white;
-	}
 	.mobile_heading{
 		display: block;
+	}
+	.proceeding_group{
+		position: relative;
+		width: 100%;
+		margin: auto;
+	}
+	.proceeding{
+		border: 1px solid rgba(80, 86, 250, 0.5);
+		padding: 5px;
+		text-align: center;
+		word-wrap: break-word;
+		border-radius: 10px;
+		box-shadow: 1px 1px 3px 1px rgba(216, 235, 240, 1);
+		background-color: rgba(216, 235, 240, 1);
+		color: rgba(80, 86, 250, 1);
 	}
 }

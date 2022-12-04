@@ -75,25 +75,29 @@ function focus_segment_experiences(id){
 }
 
 function focus_segment_highlights(id){
-	if(id=="awards"){
+	if(id=="volunteering"){
+		document.getElementById("volunteering").style.display = "block";
+		document.getElementById("awards").style.display = "none";
+		document.getElementById("activities").style.display = "none";
+		document.getElementById("volunteering_false_button").className = "false_button selected_false_button hyperlink";
+		document.getElementById("awards_false_button").className = "false_button hyperlink";
+		document.getElementById("activities_false_button").className = "false_button hyperlink";
+	}
+	else if(id=="awards"){
+		document.getElementById("volunteering").style.display = "none";
 		document.getElementById("awards").style.display = "block";
 		document.getElementById("activities").style.display = "none";
-
-		document.getElementById("awards_false_button").style.backgroundColor = "rgba(72, 156, 94, 1)";
-		document.getElementById("awards_false_button").style.color = "white";
-
-		document.getElementById("activities_false_button").style.backgroundColor = "white";
-		document.getElementById("activities_false_button").style.color = "rgba(35, 36, 35, 0.8)";
+		document.getElementById("volunteering_false_button").className = "false_button hyperlink";
+		document.getElementById("awards_false_button").className = "false_button selected_false_button hyperlink";
+		document.getElementById("activities_false_button").className = "false_button hyperlink";
 	}
 	else if(id=="activities"){
+		document.getElementById("volunteering").style.display = "none";
 		document.getElementById("awards").style.display = "none";
 		document.getElementById("activities").style.display = "block";
-
-		document.getElementById("awards_false_button").style.backgroundColor = "white";
-		document.getElementById("awards_false_button").style.color = "rgba(35, 36, 35, 0.8)";
-
-		document.getElementById("activities_false_button").style.backgroundColor = "rgba(72, 156, 94, 1)";
-		document.getElementById("activities_false_button").style.color = "white";
+		document.getElementById("volunteering_false_button").className = "false_button hyperlink";
+		document.getElementById("awards_false_button").className = "false_button hyperlink";
+		document.getElementById("activities_false_button").className = "false_button selected_false_button hyperlink";
 	}
 }
 
