@@ -29,6 +29,30 @@ function show_abstract(id){
 	}
 }
 
+function show_bibtex(id){
+	var bibtex = document.getElementsByClassName('bibtex_div');
+	for (const bib_i of bibtex) {
+		bib_i.style.display = "none";
+		if (id.split('_')[2] != bib_i.id.split('_')[1]){
+			var idx = 'bibtex_launcher_'.concat(bib_i.id.split('_')[1]);
+			var elem = document.getElementById(idx);
+			if (elem.innerText=="[-Bibtex]"){
+				elem.innerText = "[+Bibtex]";
+			}
+		}
+	}
+	var button_text = document.getElementById(id).innerText;
+	if(button_text == "[+Bibtex]"){
+		document.getElementById(id).innerText = "[-Bibtex]";
+		document.getElementById('bibtex_'.concat(id.split('_')[2])).style.display = "block";
+	}
+	else if(button_text == "[-Bibtex]"){
+		document.getElementById(id).innerText = "[+Bibtex]";
+		document.getElementById('bibtex_'.concat(id.split('_')[2])).style.display = "none";
+	}
+}
+
+
 function focus_segment_experiences(id){
 	if(id=="teaching_exp"){
 		document.getElementById("teaching_exp").style.display = "block";
@@ -37,16 +61,6 @@ function focus_segment_experiences(id){
 		document.getElementById("teaching_exp_false_button").className = "false_button selected_false_button hyperlink";
 		document.getElementById("work_exp_false_button").className = "false_button hyperlink";
 		document.getElementById("talks_false_button").className = "false_button hyperlink";
-/*
-		document.getElementById("teaching_exp_false_button").style.backgroundColor = "rgba(72, 156, 94, 1)";
-		document.getElementById("teaching_exp_false_button").style.color = "white";
-
-		document.getElementById("work_exp_false_button").style.backgroundColor = "white";
-		document.getElementById("work_exp_false_button").style.color = "rgba(35, 36, 35, 0.8)";
-
-		document.getElementById("talks_false_button").style.backgroundColor = "white";
-		document.getElementById("talks_false_button").style.color = "rgba(35, 36, 35, 0.8)";
-*/
 	}
 	else if(id=="work_exp"){
 		document.getElementById("teaching_exp").style.display = "none";
@@ -55,16 +69,6 @@ function focus_segment_experiences(id){
 		document.getElementById("teaching_exp_false_button").className = "false_button hyperlink";
 		document.getElementById("work_exp_false_button").className = "false_button selected_false_button hyperlink";
 		document.getElementById("talks_false_button").className = "false_button hyperlink";
-/*
-		document.getElementById("teaching_exp_false_button").style.backgroundColor = "white";
-		document.getElementById("teaching_exp_false_button").style.color = "rgba(35, 36, 35, 0.8)";
-
-		document.getElementById("work_exp_false_button").style.backgroundColor = "rgba(72, 156, 94, 1)";
-		document.getElementById("work_exp_false_button").style.color = "white";
-
-		document.getElementById("talks_false_button").style.backgroundColor = "white";
-		document.getElementById("talks_false_button").style.color = "rgba(35, 36, 35, 0.8)";
-*/
 	}
 	else if(id=="talks"){
 		document.getElementById("teaching_exp").style.display = "none";
@@ -73,16 +77,6 @@ function focus_segment_experiences(id){
 		document.getElementById("teaching_exp_false_button").className = "false_button hyperlink";
 		document.getElementById("work_exp_false_button").className = "false_button hyperlink";
 		document.getElementById("talks_false_button").className = "false_button selected_false_button hyperlink";
-/*
-		document.getElementById("teaching_exp_false_button").style.backgroundColor = "white";
-		document.getElementById("teaching_exp_false_button").style.color = "rgba(35, 36, 35, 0.8)";
-
-		document.getElementById("work_exp_false_button").style.backgroundColor = "white";
-		document.getElementById("work_exp_false_button").style.color = "rgba(35, 36, 35, 0.8)";
-
-		document.getElementById("talks_false_button").style.backgroundColor = "rgba(72, 156, 94, 1)";
-		document.getElementById("talks_false_button").style.color = "white";
-*/
 	}
 }
 
@@ -131,4 +125,3 @@ function open_pane(){
 		document.getElementById("menu_open_icon").style.display = "none";
 	}
 }
-

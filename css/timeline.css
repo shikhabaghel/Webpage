@@ -8,8 +8,8 @@ For laptop screens
 		flex-direction: column !important;
 		align-items: flex-start !important;
 		justify-content: space-around;
-		border-bottom: 1px solid gray;
-		margin-bottom: 25px;
+		border-bottom: 1px solid #DDD;
+		margin-bottom: 50px;
 	}
 	.year_wise_content {
 		padding: 20px 0px 20px 0px;
@@ -48,6 +48,7 @@ For laptop screens
 		flex-direction: row;
 		align-items: flex-start;
 		justify-content: space-between;
+		padding-bottom: 10px;
 	}
 	.info_div{
 		position: relative;
@@ -80,6 +81,44 @@ For laptop screens
 		border: 1px solid rgba(54, 56, 55, 0.1);
 		border-radius: 10px;
 	}
+	.bibtex_div{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		display: none;
+		padding: 10px;
+		color: rgba(45, 120, 250, 1);
+		background-color: rgba(54, 56, 55, 0.1);
+		font-style: italic;
+		font-size: 16px;
+		border: 1px solid rgba(54, 56, 55, 0.1);
+		border-radius: 10px;
+	}
+	.abstract_button{
+		text-decoration: none;
+		color: blue;
+		font-weight: 900;
+		font-size: 1vw;
+	}
+	.bibtex_button{
+		text-decoration: none;
+		color: blue;
+		font-weight: 900;
+		font-size: 1vw;
+		color: rgb(240, 129, 55);
+	}
+	.pdf_button{
+		text-decoration: none;
+		color: rgb(227, 5, 68);
+		font-weight: 900;
+		font-size: 1vw;
+	}
+	.html_button{
+		text-decoration: none;
+		color: rgb(94, 158, 74);
+		font-weight: 900;
+		font-size: 1vw;
+	}
 }
 
 
@@ -95,8 +134,8 @@ For mobile screens
 		flex-direction: column !important;
 		align-items: flex-start !important;
 		justify-content: space-around;
-		border-bottom: 1px solid gray;
-		margin-bottom: 3%;
+		border-bottom: 1px solid #DDD;
+		margin-bottom: 5%;
 	}
 	.year_wise_content {
 		padding: 20px 0px 20px 0px;
@@ -173,5 +212,39 @@ For mobile screens
 		font-size: 4vw;
 		height: 150px;
 		overflow-y: scroll;
+	}
+	.bibtex_div{
+		position: relative;
+		width: 100%;
+		margin: auto;
+		display: none;
+		padding: 10px;
+		color: rgba(45, 120, 250, 1);
+		background-color: rgba(54, 56, 55, 0.1);
+		font-style: italic;
+		font-size: 4vw;
+		border: 1px solid rgba(54, 56, 55, 0.1);
+		border-radius: 10px;
+	}
+	.abstract_button{
+		text-decoration: none;
+		color: blue;
+		font-weight: 900;
+	}
+	.bibtex_button{
+		text-decoration: none;
+		color: blue;
+		font-weight: 900;
+		color: rgb(240, 129, 55);
+	}
+	.pdf_button{
+		text-decoration: none;
+		color: rgb(227, 5, 68);
+		font-weight: 900;
+	}
+	.html_button{
+		text-decoration: none;
+		color: rgb(94, 158, 74);
+		font-weight: 900;
 	}
 }

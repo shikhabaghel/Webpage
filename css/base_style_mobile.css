@@ -240,24 +240,6 @@ For laptop screens
 		text-decoration: none;
 		color: rgba(207, 62, 110, 1);
 	}
-	.abstract_button{
-		text-decoration: none;
-		color: blue;
-		font-weight: 900;
-		font-size: 1vw;
-	}
-	.pdf_button{
-		text-decoration: none;
-		color: rgb(227, 5, 68);
-		font-weight: 900;
-		font-size: 1vw;
-	}
-	.html_button{
-		text-decoration: none;
-		color: rgb(94, 158, 74);
-		font-weight: 900;
-		font-size: 1vw;
-	}
 	.open_menu_pane{
 		display: none;
 	}
@@ -276,6 +258,12 @@ For laptop screens
 		justify-content: space-between;
 	}
 	.laptop_view{
+	}
+	.website_button{
+		text-decoration: none;
+		color: rgb(94, 158, 74);
+		font-weight: 900;
+		font-size: 1vw;
 	}
 }
 
@@ -532,21 +520,6 @@ For mobile screens
 		color: rgba(207, 62, 110, 1);
 		font-weight: 700;
 	}
-	.abstract_button{
-		text-decoration: none;
-		color: blue;
-		font-weight: 900;
-	}
-	.pdf_button{
-		text-decoration: none;
-		color: rgb(227, 5, 68);
-		font-weight: 900;
-	}
-	.html_button{
-		text-decoration: none;
-		color: rgb(94, 158, 74);
-		font-weight: 900;
-	}
 	.research_word_cloud{
 		position: relative;
 		max-width: 100%;
@@ -564,6 +537,11 @@ For mobile screens
 	}
 	.laptop_view{
 		display: none;
+	}
+	.website_button{
+		text-decoration: none;
+		color: rgb(94, 158, 74);
+		font-weight: 900;
 	}
 }
 
