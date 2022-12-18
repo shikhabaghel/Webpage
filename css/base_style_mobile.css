@@ -8,7 +8,7 @@ For laptop screens
 		padding: 0;
 		border: 0;
 		outline: 0;
-		font-size: 1.5vw;
+		font-size: 1.3vw;
 		vertical-align: baseline;
 		background: transparent;
 	}
@@ -18,7 +18,6 @@ For laptop screens
 		align-items: center;
 		justify-content: space-between;
 		position: relative;
-		width: 100vw;
 		margin: auto;
 		min-height: 100vh;
 		text-align: justify;
@@ -69,7 +68,7 @@ For laptop screens
 	}
 	.menu_pane{
 		position: fixed;
-		width: 80%;
+		width: 85%;
 		margin: auto;
 		padding-top: 1%;
 		height: 7%;
@@ -125,8 +124,9 @@ For laptop screens
 	.dashboard{
 		position: relative;
 		top: 5vw;
-		width: 65%;
+		width: 80%;
 		margin: auto;
+		margin-bottom: 25px;
 		min-height: 100%;
 		padding-top: 2vw;
 		padding-bottom: 3vw;
@@ -138,7 +138,7 @@ For laptop screens
 	}
 	.intro_tile{
 		position: relative;
-		width: 45%; 
+		width: 60%; 
 		text-align: justify;
 		padding: 10px;
 	}
@@ -150,13 +150,13 @@ For laptop screens
 	}
 	.profile_pic{
 		position: relative;
-		max-width: 50%;
+		width: 35%;
 		text-align: center;
 	}
 	.contact_details_tile{
 		position: relative;
 		width: 100%;
-		text-align: center;
+		text-align: left;
 		font-weight: 900;
 		font-size: 1.2vw;
 		margin: 0px 0px 20px 0px;
@@ -170,7 +170,7 @@ For laptop screens
 	.external_profiles{
 		position: fixed;
 		top: 20%;
-		right: 5%;
+		right: 2%;
 		width: 3%;
 		height: 50%;
 		display: flex;
@@ -264,6 +264,49 @@ For laptop screens
 		color: rgb(94, 158, 74);
 		font-weight: 900;
 		font-size: 1vw;
+	}
+	.news{
+		position: relative;
+		width: 80%;
+		margin: auto;
+		margin-bottom: 25px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.news_item{
+		position: relative;
+		width: 100%;
+		padding: 5px;
+		display: flex;
+	}
+	.news_time{
+		text-align: center;
+		font-weight: 900;
+		background-color: rgba(72, 150, 79, 1);
+		color: white;
+		border-radius: 5px;
+		padding: 3px;
+		min-width: 150px;
+		height: 25px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.latest_news{
+		background-color: rgba(219, 99, 171, 1)
+	}
+	.news_text{
+		padding: 0px 20px 0px 20px;
+	}
+	.quotes{
+		font-family: "Farsan", sans-serif;
+		color: gray;
+		font-style: italic;
+		font-weight: 500;
+		text-align: center;
+		font-size: 1.5vw;
 	}
 }
 
@@ -427,9 +470,10 @@ For mobile screens
 		position: relative;
 		max-width: 90%;
 		margin: auto;
-		text-align: center;
+		text-align: left;
 		font-weight: 500;
 		/*font-family: "Farsan", sans-serif;*/
+		font-size: 3vw;
 	}
 	.highlight_text{
 		position: relative;
@@ -542,6 +586,46 @@ For mobile screens
 		text-decoration: none;
 		color: rgb(94, 158, 74);
 		font-weight: 900;
+	}
+	.news{
+		position: relative;
+		width: 80%;
+		margin: auto;
+		margin-bottom: 25px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.news_item{
+		position: relative;
+		width: 100%;
+		padding: 5px;
+	}
+	.news_time{
+		text-align: center;
+		font-weight: 900;
+		background-color: rgba(72, 150, 79, 1);
+		color: white;
+		border-radius: 5px;
+		padding: 3px;
+		max-width: 50%;
+	}
+	.latest_news{
+		background-color: rgba(219, 99, 171, 1)
+	}
+	.news_text{
+		padding: 0px 20px 0px 20px;
+		position: relative;
+		width: 90%;
+	}
+	.quotes{
+		font-family: "Farsan", sans-serif;
+		color: gray;
+		font-style: italic;
+		font-weight: 500;
+		text-align: center;
+		font-size: 4vw;
 	}
 }
 

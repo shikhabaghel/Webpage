@@ -43,7 +43,8 @@ For laptop screens
 	}
 	.publication_record{
 		position: relative;
-		width: 100%;
+		width: 95%;
+		margin: auto;
 		display: flex;
 		flex-direction: row;
 		align-items: flex-start;
